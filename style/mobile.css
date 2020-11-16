@@ -6,7 +6,8 @@
 }
 
 .fas,
-.far {
+.far,
+.fab {
   color: white;
 }
 
@@ -245,6 +246,7 @@ nav .header-links .header-ul {
 
 .first-footer {
   background-color: black;
+  height: 550px;
 }
 
 /* main link part */
@@ -252,8 +254,8 @@ nav .header-links .header-ul {
 .footer-main-links {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
-  margin: 20px;
-  padding: 20px;
+  margin: 20px 5px;
+  padding: 20px 5px;
 }
 
 .ul-first-footer {
@@ -262,7 +264,7 @@ nav .header-links .header-ul {
 
 .ul-first-footer > li {
   margin: 5px;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .footer-location-icon {
@@ -283,7 +285,6 @@ nav .header-links .header-ul {
 /* main info section */
 
 .footer-main-info-card {
-  width: 30%;
   height: 100px;
   align-self: center;
   text-align: center;
@@ -300,6 +301,7 @@ nav .header-links .header-ul {
   color: white;
   font-size: 20px;
   letter-spacing: 2px;
+  margin: 10px auto;
 }
 
 .footer-main-info-button {
@@ -315,4 +317,24 @@ nav .header-links .header-ul {
   margin: 5px auto;
   color: gray;
   font-size: 16px;
+}
+
+/* second footer */
+
+.second-footer {
+  background-color: #333333;
+  height: 100px;
+  justify-content: space-around;
+}
+
+.footer-social-icons {
+  width: 60%;
+  margin: 10px auto;
+  justify-content: space-around;
+}
+
+.footer-rights {
+  color: white;
+  font-size: 12px;
+  text-align: center;
 }
