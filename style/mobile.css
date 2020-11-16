@@ -11,7 +11,8 @@
 }
 
 i,
-a:hover {
+a,
+button :hover {
   cursor: pointer;
 }
 
@@ -125,6 +126,10 @@ nav .header-links .header-ul {
   font-size: 15px;
 }
 
+.hero-section button[type="submit"]:hover {
+  cursor: pointer;
+}
+
 /* Hero - button */
 
 .hero-button {
@@ -162,4 +167,55 @@ nav .header-links .header-ul {
 
 .how-it-works-cards .card-work-text {
   font-size: 20px;
+}
+
+/* Our advantage seciton */
+
+.advantages-card {
+  height: 400px;
+}
+
+.advantages-card.first {
+  background-color: #264653;
+  text-align: center;
+}
+
+.advantages-card.second {
+  background-color: #f4a261;
+  text-align: center;
+}
+
+.advantages-card.third {
+  background-color: #2a9d8f;
+  text-align: center;
+}
+
+.advantages-card-title {
+  margin: 20px 10px;
+  color: white;
+}
+
+.advantages-card-text {
+  width: 80%;
+  margin: 20px auto;
+  font-size: 20px;
+  color: white;
+}
+
+.advantages-card-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.advantages-card-button {
+  display: block;
+  margin: 10px auto;
+  width: 50%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  color: #2a9d8f;
+  font-size: 15px;
+  font-weight: bold;
 }
