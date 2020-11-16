@@ -116,4 +116,130 @@
     border: none;
     padding: 0 5px;
   }
+
+  /*  Start on search results cards */
+
+  .result-card {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .result-card:hover {
+    transform: scale(1.21);
+    transition-duration: 1.5s;
+    background-color: #f3b5a6;
+    border-radius: 5px;
+  }
+
+  .result-card-img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  .result-card-text {
+    text-align: center;
+    padding: 10px 20px;
+    color: #264653;
+  }
+
+  /* Footer section */
+
+  .first-footer {
+    background-color: black;
+    height: 550px;
+  }
+
+  /* main link part */
+
+  .footer-main-links {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin: 20px 5px;
+    padding: 20px 5px;
+  }
+
+  .ul-first-footer {
+    justify-content: center;
+  }
+
+  .ul-first-footer > li {
+    margin: 5px;
+    font-size: 12px;
+  }
+
+  .footer-location-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid white;
+    text-align: center;
+    align-self: center;
+    margin: 10px 0;
+  }
+
+  .footer-location-icon > i {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  /* main info section */
+
+  .footer-main-info-card {
+    height: 100px;
+    align-self: center;
+    text-align: center;
+  }
+
+  .footer-main-info-input {
+    outline: none;
+    border: none;
+    width: 60%;
+    height: 30px;
+  }
+
+  .footer-main-info-title {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 10px auto;
+  }
+
+  .footer-main-info-button {
+    width: 35%;
+    height: 30px;
+    background-color: #e9c46a;
+    outline: none;
+    border: none;
+  }
+
+  .footer-main-info-text {
+    width: 60%;
+    margin: 5px auto;
+    color: gray;
+    font-size: 16px;
+  }
+
+  /* second footer */
+
+  .second-footer {
+    background-color: #333333;
+    height: 100px;
+    justify-content: space-around;
+  }
+
+  .footer-social-icons {
+    width: 60%;
+    margin: 10px auto;
+    justify-content: space-around;
+  }
+
+  .footer-rights {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+  }
 }
