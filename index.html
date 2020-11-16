@@ -18,13 +18,17 @@
   <body>
     <!-- Start on Header part -->
     <header>
-      <nav>
-        <div class="header-logo">
+      <nav class="flex-col">
+        <div class="header-logo flex-row">
           <!-- <i class="fas fa-clinic-medical"></i> -->
-          <img src="/images/clinic-logo.jpg" alt="clinic-logo" />
+          <img
+            class="header-logo-img"
+            src="/images/clinic-logo.jpg"
+            alt="clinic-logo"
+          />
         </div>
         <div class="header-links">
-          <ul class="header-ul">
+          <ul class="header-ul flex-row">
             <li><i class="fas fa-search-location"></i></li>
             <li><i class="far fa-user"></i></li>
             <li><i class="fas fa-rss"></i></li>
@@ -33,6 +37,25 @@
         </div>
       </nav>
     </header>
+
+    <!-- Hero section -->
+    <section class="hero-section flex-col">
+      <h1 class="hero-card-header">Find Your Doctor and Book online Now !</h1>
+      <form class="hero-card-form flex-col">
+        <label for="search-input"> Search for clinic:</label>
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Type the clinic name here"
+        />
+        <button type="submit">Search</button>
+      </form>
+      <form class="hero-button" action="#how-it-works">
+        <input type="submit" value="How it works" />
+      </form>
+    </section>
+
+    <section id="how-it-works"></section>
     <!-- Fontawesome link -->
     <script
       src="https://kit.fontawesome.com/a4590f3e3a.js"

@@ -1,7 +1,10 @@
+/* General */
+
 * {
   padding: 0;
   margin: 0;
 }
+
 .fas,
 .far {
   color: white;
@@ -12,18 +15,28 @@ a:hover {
   cursor: pointer;
 }
 
+ul {
+  list-style: none;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Header */
 header {
   background-color: #e76f51;
   height: 200px;
 }
 
-ul {
-  list-style: none;
-}
-
+/* Nav section */
 nav {
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
   align-content: center;
   height: 100%;
@@ -32,11 +45,10 @@ nav {
 }
 
 .header-logo {
-  display: flex;
   justify-content: center;
 }
 
-.header-logo img {
+.header-logo .header-logo-img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -49,7 +61,6 @@ nav .header-logo .fa-clinic-medical {
 }
 
 nav .header-links .header-ul {
-  display: flex;
   justify-content: space-between;
   width: 75%;
   margin: 0 auto;
@@ -57,4 +68,70 @@ nav .header-links .header-ul {
 
 .header-ul li i {
   font-size: 20px;
+}
+
+/* Start on hero-section */
+
+.hero-section {
+  height: 800px;
+  width: 100%;
+  background: url("/images/clinic-bg-hero-section.jpg") no-repeat center;
+  background-size: cover;
+  justify-content: space-around;
+}
+
+/* Hero - text */
+.hero-card-header {
+  color: #264653;
+  text-align: center;
+  text-transform: uppercase;
+  width: 50%;
+  align-self: center;
+}
+
+/* Hero-card */
+.hero-card-form {
+  justify-content: space-around;
+  width: 40%;
+  height: 120px;
+  background-color: #e9c46a80;
+  align-self: center;
+  padding: 15px;
+}
+
+.hero-card-form label {
+  color: #264653;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hero-section input[type="text"] {
+  width: 90%;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.hero-section button[type="submit"] {
+  width: 90%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #2a9d8f;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* Hero - button */
+
+.hero-button {
+  align-self: center;
+}
+
+.hero-button input[type="submit"] {
+  height: 30px;
+  padding: 5px;
 }
