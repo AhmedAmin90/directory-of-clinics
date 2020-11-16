@@ -283,9 +283,17 @@ nav .header-links .header-ul {
 /* main info section */
 
 .footer-main-info-card {
+  width: 30%;
   height: 100px;
   align-self: center;
   text-align: center;
+}
+
+.footer-main-info-input {
+  outline: none;
+  border: none;
+  width: 60%;
+  height: 30px;
 }
 
 .footer-main-info-title {
@@ -294,9 +302,17 @@ nav .header-links .header-ul {
   letter-spacing: 2px;
 }
 
+.footer-main-info-button {
+  width: 35%;
+  height: 30px;
+  background-color: #e9c46a;
+  outline: none;
+  border: none;
+}
+
 .footer-main-info-text {
   width: 60%;
   margin: 5px auto;
-  color: white;
+  color: gray;
   font-size: 16px;
 }
