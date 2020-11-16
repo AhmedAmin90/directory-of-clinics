@@ -74,7 +74,7 @@ nav .header-links .header-ul {
 /* Start on hero-section */
 
 .hero-section {
-  height: 800px;
+  height: 400px;
   width: 100%;
   background: url("/images/clinic-bg-hero-section.jpg") no-repeat center;
   background-size: cover;
@@ -137,6 +137,7 @@ nav .header-links .header-ul {
 }
 
 .hero-button input[type="submit"] {
+  width: 100px;
   height: 30px;
   padding: 5px;
 }
@@ -152,20 +153,32 @@ nav .header-links .header-ul {
   width: 50%;
   margin: 10px auto;
   text-align: center;
+  background-color: #b7b7a420;
+  padding: 15px;
+  border-radius: 5px;
 }
 
-.how-it-works-cards .card-work-img {
-  width: 100px;
-  height: 100px;
+.how-it-works-cards:hover {
+  background-color: #b7b7a480;
+}
+
+.card-work-img {
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   border: 1px solid #2a9d8f;
 }
 
-.how-it-works-cards .card-work-title {
+.card-work-img:hover {
+  transform: scale(1.25);
+  transition-duration: 1s;
+}
+
+.card-work-title {
   margin: 15px;
 }
 
-.how-it-works-cards .card-work-text {
+.card-work-text {
   font-size: 20px;
 }
 
