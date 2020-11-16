@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.fas,
+.far {
+  color: white;
+}
+
+i,
+a:hover {
+  cursor: pointer;
+}
+
+header {
+  background-color: #e76f51;
+  height: 200px;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  height: 100%;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.header-logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+nav .header-logo .fa-clinic-medical {
+  font-size: 50px;
+  color: #264653;
+  margin: 0 auto;
+}
+
+nav .header-links .header-ul {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.header-ul li i {
+  font-size: 20px;
+}
