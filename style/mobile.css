@@ -10,6 +10,11 @@
   color: white;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 i,
 a,
 button :hover {
@@ -149,6 +154,7 @@ nav .header-links .header-ul {
   margin: 15px auto;
 }
 
+/* how it work cards */
 .how-it-works-cards {
   width: 50%;
   margin: 10px auto;
@@ -203,6 +209,8 @@ nav .header-links .header-ul {
   text-align: center;
 }
 
+/* inside our advantages */
+
 .advantages-card-title {
   margin: 20px 10px;
   color: white;
@@ -231,4 +239,41 @@ nav .header-links .header-ul {
   color: #2a9d8f;
   font-size: 15px;
   font-weight: bold;
+}
+
+/* Footer section */
+
+.first-footer {
+  background-color: black;
+}
+
+.footer-main-links {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin: 20px;
+  padding: 20px;
+}
+
+.ul-first-footer {
+  justify-content: center;
+}
+
+.ul-first-footer > li {
+  margin: 5px;
+  font-weight: bold;
+}
+
+.footer-location-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid white;
+  text-align: center;
+  align-self: center;
+  margin: 10px 0;
+}
+
+.footer-location-icon > i {
+  font-size: 30px;
+  margin-top: 10px;
 }
