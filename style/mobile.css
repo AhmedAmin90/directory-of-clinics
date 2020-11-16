@@ -247,6 +247,8 @@ nav .header-links .header-ul {
   background-color: black;
 }
 
+/* main link part */
+
 .footer-main-links {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
@@ -260,7 +262,7 @@ nav .header-links .header-ul {
 
 .ul-first-footer > li {
   margin: 5px;
-  font-weight: bold;
+  font-size: 15px;
 }
 
 .footer-location-icon {
@@ -276,4 +278,25 @@ nav .header-links .header-ul {
 .footer-location-icon > i {
   font-size: 30px;
   margin-top: 10px;
+}
+
+/* main info section */
+
+.footer-main-info-card {
+  height: 100px;
+  align-self: center;
+  text-align: center;
+}
+
+.footer-main-info-title {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.footer-main-info-text {
+  width: 60%;
+  margin: 5px auto;
+  color: white;
+  font-size: 16px;
 }
