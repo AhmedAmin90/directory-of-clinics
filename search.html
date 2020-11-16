@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/search-style.css" />
+    <title>Clinics Search Results</title>
+  </head>
+  <body>
+    <header>
+      <nav class="flex-col">
+        <div class="header-logo flex-row">
+          <!-- <i class="fas fa-clinic-medical"></i> -->
+          <img
+            class="header-logo-img"
+            src="/images/clinic-logo.jpg"
+            alt="clinic-logo"
+          />
+        </div>
+        <div class="header-links">
+          <ul class="header-ul flex-row">
+            <li><i class="fas fa-search-location"></i></li>
+            <li><i class="far fa-user"></i></li>
+            <li><i class="fas fa-rss"></i></li>
+            <li><i class="fas fa-bars"></i></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="filter-section">
+      <p class="filter-section-title">Search for clinics by:</p>
+      <form class="flex-col">
+        <label for="city">City</label>
+        <input type="text" id="city" placeholder="Name of City" />
+        <label for="doctor">Doctor</label>
+        <input type="text" id="doctor" placeholder="Name of Doctor" />
+        <label for="specialties">Specialties</label>
+        <input type="text" id="specialties" placeholder="Medical Specialties" />
+      </form>
+    </section>
+
+    <!-- Fontawesome link -->
+    <script
+      src="https://kit.fontawesome.com/a4590f3e3a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
