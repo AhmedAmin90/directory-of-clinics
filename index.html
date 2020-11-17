@@ -10,7 +10,11 @@
       media="screen and (max-width: 768px)"
       href="./style/mobile.css"
     />
-    <link rel="stylesheet" href="./style/tablet.css" />
+    <link
+      rel="stylesheet"
+      media="screen and  (max-width: 1024px) and (min-width: 769px)"
+      href="./style/tablet.css"
+    />
     <link rel="stylesheet" href="./style/desktop.css" />
 
     <title>Clincs Directory</title>
@@ -18,9 +22,8 @@
   <body>
     <!-- Start on Header part -->
     <header>
-      <nav class="flex-col">
+      <nav class="flex-col nav-large-screen">
         <div class="header-logo flex-row">
-          <!-- <i class="fas fa-clinic-medical"></i> -->
           <img
             class="header-logo-img"
             src="./images/clinic-logo.jpg"
@@ -34,15 +37,19 @@
                 onclick="location.href='search.html';"
                 class="fas fa-search-location"
               ></i>
+              <strong> <a href="search.html">Clinics</a> </strong>
             </li>
             <li>
               <i class="far fa-user"></i>
+              <strong> <a href="#about-us">About</a> </strong>
             </li>
             <li>
               <i class="fas fa-rss"></i>
+              <strong> <a href="#">Blog</a> </strong>
             </li>
             <li>
               <i class="fas fa-bars"></i>
+              <strong> <a href="index.html">Home</a> </strong>
             </li>
           </ul>
         </div>
@@ -66,7 +73,10 @@
       </form>
     </section>
     <!-- How it works section -->
-    <section id="how-it-works" class="how-it-works flex-col">
+    <section
+      id="how-it-works"
+      class="how-it-works flex-col how-it-works-large-screen"
+    >
       <div class="how-it-works-cards">
         <img
           class="card-work-img"
@@ -161,7 +171,7 @@
     <!-- Footer section -->
     <footer class="flex-col">
       <div class="first-footer flex-col">
-        <div class="footer-main-links flex-col">
+        <div class="footer-main-links flex-col footer-main-links-large-screen">
           <ul class="ul-first-footer flex-row">
             <li><a href="#">HOME</a></li>
             <li><a href="#">SEARCH</a></li>
@@ -179,7 +189,10 @@
           </ul>
         </div>
 
-        <div class="footer-main-info flex-col">
+        <div
+          class="footer-main-info flex-col footer-main-info-large"
+          id="about-us"
+        >
           <div class="footer-main-info-card">
             <form>
               <h1 class="footer-main-info-title">SUBSCRIPTION</h1>
