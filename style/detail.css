@@ -1,45 +1,47 @@
+/* General */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.fas,
+.far,
+.fab {
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+i,
+a,
+button:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Mobile screen */
+
 @media screen and (max-width: 768px) {
-  /* General */
-
-  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-
-  * {
-    padding: 0;
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-  }
-
-  .fas,
-  .far,
-  .fab {
-    color: white;
-  }
-
-  a {
-    color: white;
-    text-decoration: none;
-  }
-
-  i,
-  a,
-  button:hover {
-    cursor: pointer;
-  }
-
-  ul {
-    list-style: none;
-  }
-
-  .flex-col {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .flex-row {
-    display: flex;
-    flex-direction: row;
-  }
-
   /* Header */
   header {
     background-color: #e76f51;
@@ -63,12 +65,12 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
   }
 
   .header-logo-img:hover {
     transform: rotate(360deg) scale(1.3);
-    transition-timing-function: linear;
-    transition-duration: 2s;
   }
 
   .header-ul {
@@ -77,8 +79,18 @@
     margin: 0 auto;
   }
 
-  .header-ul > li > i {
+  .header-links strong {
+    display: none;
+  }
+
+  .header-ul > li > i,
+  a {
     font-size: 20px;
+  }
+
+  .header-ul > li > i {
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
   }
 
   .header-ul > li > i:hover {
@@ -87,7 +99,6 @@
     transition-duration: 1s;
     color: #264653;
   }
-
   /* Start on clinic map section */
 
   .map-title {
@@ -119,16 +130,17 @@
   }
 
   .appointment-btn {
-    padding: 5px;
+    padding: 10px;
     outline: none;
     color: #264653;
     font-weight: bold;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.75s;
   }
 
   .appointment-btn:hover {
     padding: 10px;
     transform: translateY(10px);
-    transition-duration: 0.75s;
   }
 
   /* Footer section */
@@ -226,5 +238,487 @@
     color: white;
     font-size: 12px;
     text-align: center;
+  }
+}
+
+/* Tablet screen */
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  /* Header */
+  header {
+    background-color: #e76f51;
+    height: 110px;
+  }
+
+  /* Nav section */
+
+  .nav-large-screen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  nav {
+    justify-content: space-between;
+    align-content: center;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .header-logo {
+    justify-content: center;
+  }
+
+  .header-logo-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .header-logo-img:hover {
+    transform: rotate(360deg) scale(1.3);
+  }
+
+  .header-links {
+    width: 60%;
+  }
+
+  .header-links strong {
+    margin: 0 5px;
+  }
+
+  .header-ul {
+    justify-content: space-around;
+  }
+
+  .header-ul > li > i,
+  a {
+    font-size: 20px;
+  }
+
+  .header-ul > li > i {
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .header-ul > li > i:hover {
+    transform: scale(1.5);
+    transition-duration: 1s;
+    color: #264653;
+  }
+
+  /* Start on clinic map section */
+
+  .map-title {
+    text-align: center;
+    color: #264653;
+    margin: 10px auto;
+  }
+
+  .map-frame {
+    width: 90%;
+    height: 300px;
+    margin: 10px auto;
+  }
+
+  /* Start on clinic details section */
+
+  .clinic-details {
+    height: 400px;
+  }
+
+  .details-card {
+    height: 30px;
+    background-color: #f3b5a6;
+    border: 1px solid #264653;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .appointment-btn {
+    padding: 10px;
+    outline: none;
+    color: #264653;
+    font-weight: bold;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.75s;
+  }
+
+  .appointment-btn:hover {
+    padding: 10px;
+    transform: translateY(10px);
+  }
+
+  /* Footer section */
+
+  .first-footer {
+    background-color: black;
+    height: 300px;
+  }
+
+  .footer-main-links-large-screen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+  }
+  /* main link part */
+
+  .footer-main-links {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin: 20px 5px;
+    padding: 20px 5px;
+  }
+
+  .ul-first-footer {
+    justify-content: center;
+  }
+
+  .ul-first-footer > li {
+    margin: 5px;
+    font-size: 12px;
+  }
+
+  .footer-location-icon {
+    position: relative;
+    z-index: 1;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid white;
+    text-align: center;
+    align-self: center;
+    margin: 10px 0;
+    background-color: black;
+  }
+
+  .footer-location-icon > i {
+    font-size: 50px;
+    margin-top: 10px;
+  }
+
+  /* main info section */
+
+  .footer-main-info-card {
+    height: 100px;
+    align-self: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+  }
+
+  .footer-main-info-large {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 150px;
+  }
+
+  .footer-main-info-input {
+    outline: none;
+    border: none;
+    width: 80%;
+    height: 30px;
+    padding: 5px;
+  }
+
+  .footer-main-info-title {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 10px auto;
+  }
+
+  .footer-main-info-button {
+    width: 50%;
+    height: 40px;
+    background-color: #e9c46a;
+    outline: none;
+    border: none;
+    margin-top: 5px;
+    padding: 10px;
+  }
+
+  .footer-main-info-text {
+    margin: 5px auto;
+    color: gray;
+    font-size: 16px;
+  }
+
+  /* second footer */
+
+  .second-footer {
+    background-color: #333333;
+    height: 100px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-social-icons {
+    width: 30%;
+    margin: 10px;
+    justify-content: space-between;
+  }
+
+  .footer-rights {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 10px;
+  }
+}
+
+/* For desktop screen */
+
+@media screen and (min-width: 1025px) {
+  /* Header */
+
+  header {
+    background-color: #e76f51;
+    height: 110px;
+  }
+
+  /* Nav section */
+
+  .nav-large-screen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  nav {
+    justify-content: space-between;
+    align-content: center;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .header-logo {
+    justify-content: center;
+  }
+
+  .header-logo-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .header-logo-img:hover {
+    transform: rotate(360deg) scale(1.3);
+  }
+
+  .header-links {
+    width: 60%;
+  }
+
+  .header-links strong {
+    margin: 0 5px;
+  }
+
+  .header-ul {
+    justify-content: space-around;
+  }
+
+  .header-ul > li > i,
+  a {
+    font-size: 20px;
+  }
+
+  .header-ul > li > i {
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .header-ul > li > i:hover {
+    transform: scale(1.5);
+
+    transition-duration: 1s;
+    color: #264653;
+  }
+
+  /* Start on clinic map section */
+
+  .map-title {
+    text-align: center;
+    color: #264653;
+    margin: 10px auto;
+  }
+
+  .map-frame {
+    width: 90%;
+    height: 300px;
+    margin: 10px auto;
+  }
+
+  /* Start on clinic details section */
+
+  .clinic-details {
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .details-card {
+    width: 40%;
+    height: 30px;
+    background-color: #f3b5a6;
+    border: 1px solid #264653;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .appointment-btn {
+    padding: 10px;
+    outline: none;
+    color: #264653;
+    font-weight: bold;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.75s;
+  }
+
+  .appointment-btn:hover {
+    padding: 10px;
+    transform: translateY(10px);
+  }
+
+  /* Footer section */
+
+  .first-footer {
+    background-color: black;
+    height: 300px;
+  }
+
+  .footer-main-links-large-screen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+  }
+  /* main link part */
+
+  .footer-main-links {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin: 20px 5px;
+    padding: 20px 5px;
+  }
+
+  .ul-first-footer {
+    justify-content: center;
+  }
+
+  .ul-first-footer > li {
+    margin: 5px;
+    font-size: 12px;
+  }
+
+  .footer-location-icon {
+    position: relative;
+    z-index: 1;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid white;
+    text-align: center;
+    align-self: center;
+    margin: 10px 0;
+    background-color: black;
+  }
+
+  .footer-location-icon > i {
+    font-size: 50px;
+    margin-top: 10px;
+  }
+
+  /* main info section */
+
+  .footer-main-info-card {
+    height: 100px;
+    align-self: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+  }
+
+  .footer-main-info-large {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 150px;
+  }
+
+  .footer-main-info-input {
+    outline: none;
+    border: none;
+    width: 80%;
+    height: 30px;
+    padding: 5px;
+  }
+
+  .footer-main-info-title {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 10px auto;
+  }
+
+  .footer-main-info-button {
+    width: 50%;
+    height: 40px;
+    background-color: #e9c46a;
+    outline: none;
+    border: none;
+    margin-top: 5px;
+    padding: 10px;
+  }
+
+  .footer-main-info-text {
+    margin: 5px auto;
+    color: gray;
+    font-size: 16px;
+  }
+
+  /* second footer */
+
+  .second-footer {
+    background-color: #333333;
+    height: 100px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-social-icons {
+    width: 30%;
+    margin: 10px;
+    justify-content: space-between;
+  }
+
+  .footer-rights {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 10px;
   }
 }
