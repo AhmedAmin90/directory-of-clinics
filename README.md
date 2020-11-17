@@ -33,6 +33,12 @@ This project is an online clinic directory website, which contains 3 pages:
 - Fontawesome.
 - CSS animation.
 
+## colors:
+
+- I usded this color palette:
+
+![screenshot](./images/clinics-Colors.png)
+
 ## The content of each page:
 
 # General content:
