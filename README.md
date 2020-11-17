@@ -35,7 +35,7 @@ This project is an online clinic directory website, which contains 3 pages:
 
 ## colors:
 
-- I usded this color palette:
+- I used this color palette:
 
 ![screenshot](./images/clinics-Colors.png)
 
