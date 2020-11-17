@@ -6,7 +6,7 @@ This project is an online clinic directory website, which contains 3 pages:
 
 1- Homepage.
 2- Search results page.
-3- Internal clinic page (detatils page).
+3- Internal clinic page (details page).
 
 - Each page with 3 responsive breakpoints
 
