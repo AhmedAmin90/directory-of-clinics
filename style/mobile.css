@@ -287,9 +287,9 @@ a {
   justify-content: center;
 }
 
-.ul-first-footer > li {
+.ul-first-footer > li a {
   margin: 5px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .footer-location-icon {
