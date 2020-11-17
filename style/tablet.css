@@ -110,7 +110,7 @@ a {
 .hero-section {
   height: 400px;
   width: 100%;
-  background: url("/images/clinic-bg-hero-section.jpg") no-repeat center;
+  background: url("../images/clinic-bg-hero-section.jpg") no-repeat center;
   background-size: cover;
   justify-content: space-around;
 }
