@@ -65,12 +65,12 @@ ul {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
   }
 
   .header-logo-img:hover {
     transform: rotate(360deg) scale(1.3);
-    transition-timing-function: linear;
-    transition-duration: 2s;
   }
 
   .header-ul {
@@ -86,6 +86,11 @@ ul {
   .header-ul > li > i,
   a {
     font-size: 20px;
+  }
+
+  .header-ul > li > i {
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
   }
 
   .header-ul > li > i:hover {
@@ -296,12 +301,12 @@ ul {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
   }
 
   .header-logo-img:hover {
     transform: rotate(360deg) scale(1.3);
-    transition-timing-function: linear;
-    transition-duration: 2s;
   }
 
   .header-links {
@@ -321,9 +326,13 @@ ul {
     font-size: 20px;
   }
 
+  .header-ul > li > i {
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+  }
+
   .header-ul > li > i:hover {
     transform: scale(1.5);
-
     transition-duration: 1s;
     color: #264653;
   }
@@ -532,6 +541,7 @@ ul {
 
 @media screen and (min-width: 1025px) {
   /* Header */
+
   header {
     background-color: #e76f51;
     height: 110px;
@@ -561,12 +571,12 @@ ul {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
   }
 
   .header-logo-img:hover {
     transform: rotate(360deg) scale(1.3);
-    transition-timing-function: linear;
-    transition-duration: 2s;
   }
 
   .header-links {
@@ -584,6 +594,11 @@ ul {
   .header-ul > li > i,
   a {
     font-size: 20px;
+  }
+
+  .header-ul > li > i {
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
   }
 
   .header-ul > li > i:hover {
