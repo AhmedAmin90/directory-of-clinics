@@ -53,7 +53,7 @@ This project is an online clinic directory website, which contains 3 pages:
 
 Here you will find a Live Demo page, any comment is well recieved.
 
-[Live Demo Link](https://ahmedamin90.github.io/directory-of-clinics/)
+[Live Demo Link](https://raw.githack.com/AhmedAmin90/directory-of-clinics/project/index.html)
 
 ## Authors
 
