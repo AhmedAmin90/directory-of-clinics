@@ -91,6 +91,14 @@ Feel free to check the [issues page](https://github.com/AhmedAmin90/directory-of
 Give a ⭐️ if you like this project!
 Also advices are well recieved.
 
+## Thanks for Design Idea:
+
+This design is modified from : https://www.behance.net/gallery/25563385/PatashuleKE
+Designed by:
+
+- Mathew Njuguna from Nairobi, Kenya.
+- Sam Achola from Nairobi, Kenya.
+
 ## Acknowledgments
 
 - Microverse Team.
