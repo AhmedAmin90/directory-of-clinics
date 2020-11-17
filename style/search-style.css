@@ -133,6 +133,10 @@
     border-radius: 5px;
   }
 
+  .result-card:hover > .clinic-link {
+    display: block;
+  }
+
   .result-card-img {
     width: 100%;
     height: 200px;
@@ -144,6 +148,14 @@
     text-align: center;
     padding: 10px 20px;
     color: #264653;
+  }
+
+  .clinic-link {
+    color: #264653;
+    background-color: #e9c46a;
+    padding: 5px;
+    display: none;
+    text-align: center;
   }
 
   /* Footer section */
