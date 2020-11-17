@@ -10,6 +10,21 @@ This project is an online clinic directory website, which contains 3 pages:
 
 - Each page with 3 responsive breakpoints
 
+## How to navigate through the website:
+
+- Clinics link in the navbar takes you to the clinics search result page.
+- Inside the clinic card in clinic result page after you hover on any card it will show to you a link to the clinic details page.
+- About link in the Navbar takes you to footer section at about section.
+- Home link in the navbar takes you to the homepage.
+
+## Animation:
+
+- Header logo.
+- Navvar icons.
+- How it works cards when hover.
+- Clinic cards inside clinic result page.
+- Choose appointment button in the details page.
+
 ## I used:
 
 - HTML5.
