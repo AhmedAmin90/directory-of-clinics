@@ -311,6 +311,7 @@ a {
   align-items: center;
   height: 20px;
 }
+
 /* main link part */
 
 .footer-main-links {
@@ -342,7 +343,7 @@ a {
   background-color: black;
 }
 
-.footer-location-icon > i {
+.fa-map-marker-alt {
   font-size: 50px;
   margin-top: 10px;
 }
@@ -399,9 +400,8 @@ a {
 /* second footer */
 
 .second-footer {
-  background-color: #333333;
+  background-color: #333;
   height: 100px;
-  justify-content: space-around;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

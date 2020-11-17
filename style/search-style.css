@@ -95,7 +95,6 @@ ul {
 
   .header-ul > li > i:hover {
     transform: scale(1.5);
-
     transition-duration: 1s;
     color: #264653;
   }
@@ -145,6 +144,14 @@ ul {
     border-radius: 5px;
   }
 
+  .clinic-link {
+    color: #264653;
+    background-color: #e9c46a;
+    padding: 5px;
+    display: none;
+    text-align: center;
+  }
+
   .result-card:hover > .clinic-link {
     display: block;
   }
@@ -160,14 +167,6 @@ ul {
     text-align: center;
     padding: 10px 20px;
     color: #264653;
-  }
-
-  .clinic-link {
-    color: #264653;
-    background-color: #e9c46a;
-    padding: 5px;
-    display: none;
-    text-align: center;
   }
 
   /* Footer section */
@@ -205,7 +204,7 @@ ul {
     margin: 10px 0;
   }
 
-  .footer-location-icon > i {
+  .fa-map-marker-alt {
     font-size: 30px;
     margin-top: 10px;
   }
@@ -250,7 +249,7 @@ ul {
   /* second footer */
 
   .second-footer {
-    background-color: #333333;
+    background-color: #333;
     height: 100px;
     justify-content: space-around;
   }
@@ -387,6 +386,14 @@ ul {
     border-radius: 5px;
   }
 
+  .clinic-link {
+    color: #264653;
+    background-color: #e9c46a;
+    padding: 5px;
+    display: none;
+    text-align: center;
+  }
+
   .result-card:hover > .clinic-link {
     display: block;
   }
@@ -404,14 +411,6 @@ ul {
     color: #264653;
   }
 
-  .clinic-link {
-    color: #264653;
-    background-color: #e9c46a;
-    padding: 5px;
-    display: none;
-    text-align: center;
-  }
-
   /* Footer section */
 
   .first-footer {
@@ -426,6 +425,7 @@ ul {
     align-items: center;
     height: 20px;
   }
+
   /* main link part */
 
   .footer-main-links {
@@ -457,7 +457,7 @@ ul {
     background-color: black;
   }
 
-  .footer-location-icon > i {
+  .fa-map-marker-alt {
     font-size: 50px;
     margin-top: 10px;
   }
@@ -514,9 +514,8 @@ ul {
   /* second footer */
 
   .second-footer {
-    background-color: #333333;
+    background-color: #333;
     height: 100px;
-    justify-content: space-around;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -603,7 +602,6 @@ ul {
 
   .header-ul > li > i:hover {
     transform: scale(1.5);
-
     transition-duration: 1s;
     color: #264653;
   }
@@ -671,6 +669,14 @@ ul {
     border-radius: 5px;
   }
 
+  .clinic-link {
+    color: #264653;
+    background-color: #e9c46a;
+    padding: 5px;
+    display: none;
+    text-align: center;
+  }
+
   .result-card:hover > .clinic-link {
     display: block;
   }
@@ -688,14 +694,6 @@ ul {
     color: #264653;
   }
 
-  .clinic-link {
-    color: #264653;
-    background-color: #e9c46a;
-    padding: 5px;
-    display: none;
-    text-align: center;
-  }
-
   /* Footer section */
 
   .first-footer {
@@ -710,6 +708,7 @@ ul {
     align-items: center;
     height: 20px;
   }
+
   /* main link part */
 
   .footer-main-links {
@@ -741,7 +740,7 @@ ul {
     background-color: black;
   }
 
-  .footer-location-icon > i {
+  .fa-map-marker-alt {
     font-size: 50px;
     margin-top: 10px;
   }
@@ -798,9 +797,8 @@ ul {
   /* second footer */
 
   .second-footer {
-    background-color: #333333;
+    background-color: #333;
     height: 100px;
-    justify-content: space-around;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
