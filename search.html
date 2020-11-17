@@ -7,10 +7,10 @@
     <title>Clinics Search Results</title>
   </head>
   <body>
+    <!-- Start on Header part -->
     <header>
-      <nav class="flex-col">
+      <nav class="flex-col nav-large-screen">
         <div class="header-logo flex-row">
-          <!-- <i class="fas fa-clinic-medical"></i> -->
           <img
             class="header-logo-img"
             src="./images/clinic-logo.jpg"
@@ -19,10 +19,25 @@
         </div>
         <div class="header-links">
           <ul class="header-ul flex-row">
-            <li><i class="fas fa-search-location"></i></li>
-            <li><i class="far fa-user"></i></li>
-            <li><i class="fas fa-rss"></i></li>
-            <li><i class="fas fa-bars"></i></li>
+            <li>
+              <i
+                onclick="location.href='search.html';"
+                class="fas fa-search-location"
+              ></i>
+              <strong> <a href="search.html">Clinics</a> </strong>
+            </li>
+            <li>
+              <i class="far fa-user"></i>
+              <strong> <a href="#about-us">About</a> </strong>
+            </li>
+            <li>
+              <i class="fas fa-rss"></i>
+              <strong> <a href="#">Blog</a> </strong>
+            </li>
+            <li>
+              <i class="fas fa-bars"></i>
+              <strong> <a href="index.html">Home</a> </strong>
+            </li>
           </ul>
         </div>
       </nav>
@@ -88,9 +103,10 @@
       </div>
     </section>
 
+    <!-- Footer section -->
     <footer class="flex-col">
       <div class="first-footer flex-col">
-        <div class="footer-main-links flex-col">
+        <div class="footer-main-links flex-col footer-main-links-large-screen">
           <ul class="ul-first-footer flex-row">
             <li><a href="#">HOME</a></li>
             <li><a href="#">SEARCH</a></li>
@@ -108,7 +124,10 @@
           </ul>
         </div>
 
-        <div class="footer-main-info flex-col">
+        <div
+          class="footer-main-info flex-col footer-main-info-large"
+          id="about-us"
+        >
           <div class="footer-main-info-card">
             <form>
               <h1 class="footer-main-info-title">SUBSCRIPTION</h1>
