@@ -101,30 +101,70 @@ ul {
   /* Start on filter section */
 
   .filter-section {
-    margin: 20px 10px;
+    width: 100%;
+    margin: 60px 0;
     padding: 20px;
-    height: 200px;
-    background-color: #e9c46a;
+    height: 450px;
+    background-color: #edf0f1;
     border-radius: 5px;
   }
 
+  .small-form-filter {
+    width: 90%;
+    height: 35%;
+    margin: 5px auto;
+    justify-content: center;
+    align-content: center;
+  }
+
   .filter-section-title {
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
-    color: #264653;
+    color: #aaa5a2;
+    margin: 20px auto;
   }
 
   .filter-section label {
-    color: #264653;
-    font-size: 15px;
+    color: #7b7b7e;
+    font-size: 18px;
+    font-weight: bold;
   }
 
   .filter-section input {
-    margin: 5px 0;
     height: 30px;
     outline: none;
     border: none;
-    padding: 0 5px;
+    padding: 0 10px;
+    width: 95%;
+  }
+
+  select {
+    width: 95%;
+    height: 30px;
+    outline: none;
+    border: none;
+    color: #679ac2;
+  }
+
+  .btn-filter {
+    width: 50%;
+    height: 30px;
+    margin: 5px auto;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .btn-filter-search {
+    background-color: #457eb4;
+  }
+
+  .btn-filter-clear {
+    background-color: #e5ab5a;
   }
 
   /*  Start on search results cards */
@@ -341,30 +381,77 @@ ul {
   /* Start on filter section */
 
   .filter-section {
-    margin: 20px 10px;
+    width: 100%;
+    margin: 60px 0;
     padding: 20px;
     height: 250px;
-    background-color: #e9c46a;
+    background-color: #edf0f1;
     border-radius: 5px;
+  }
+
+  .filter-form-large-screen {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding: 0 25px;
+  }
+
+  .small-form-filter {
+    width: 20%;
+    height: 35%;
+    justify-content: space-around;
   }
 
   .filter-section-title {
     font-size: 30px;
     text-align: center;
-    color: #264653;
+    color: #aaa5a2;
+    margin: 20px auto;
   }
 
   .filter-section label {
-    color: #264653;
-    font-size: 20px;
+    color: #7b7b7e;
+    font-size: 15px;
+    font-weight: bold;
   }
 
   .filter-section input {
-    margin: 5px 0 20px 0;
     height: 30px;
     outline: none;
     border: none;
-    padding: 0 5px;
+    padding: 0 10px;
+    width: 95%;
+  }
+
+  select {
+    width: 95%;
+    height: 30px;
+    outline: none;
+    border: none;
+    color: #679ac2;
+  }
+
+  .btn-filter {
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 35px 5px;
+  }
+
+  .btn-filter-search {
+    width: 8%;
+    background-color: #457eb4;
+  }
+
+  .btn-filter-clear {
+    width: 10%;
+    background-color: #e5ab5a;
   }
 
   /* result cards */
@@ -643,7 +730,7 @@ ul {
 
   .filter-section label {
     color: #7b7b7e;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
   }
 
@@ -664,7 +751,7 @@ ul {
   }
 
   .btn-filter {
-    height: 40px;
+    height: 30px;
     border-radius: 5px;
     border: none;
     outline: none;
@@ -672,7 +759,7 @@ ul {
     font-weight: bold;
     font-size: 12px;
     text-transform: uppercase;
-    margin: 30px 5px;
+    margin: 38px 5px;
   }
 
   .btn-filter-search {
