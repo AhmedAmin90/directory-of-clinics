@@ -268,17 +268,17 @@ nav {
 }
 
 .advantages-card.first {
-  background-color: #264653;
-  text-align: center;
-}
-
-.advantages-card.second {
   background-color: #f4a261;
   text-align: center;
 }
 
+.advantages-card.second {
+  background-color: #98a4a5;
+  text-align: center;
+}
+
 .advantages-card.third {
-  background-color: #2a9d8f;
+  background-color: #509cd8;
   text-align: center;
 }
 

@@ -1,11 +1,9 @@
 /* General */
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-
 * {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
 
@@ -44,7 +42,7 @@ ul {
 /* Header */
 header {
   background-color: #e76f51;
-  height: 200px;
+  height: 120px;
 }
 
 /* Nav section */
@@ -61,8 +59,8 @@ nav {
 }
 
 .header-logo-img {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   transition-duration: 2s;
   transition-timing-function: ease-in-out;
@@ -104,51 +102,60 @@ nav {
   width: 100%;
   background: url("../images/clinic-bg-hero-section.jpg") no-repeat center;
   background-size: cover;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 /* Hero - text */
 .hero-card-header {
-  color: #264653;
+  color: white;
   text-align: center;
   text-transform: uppercase;
   align-self: center;
+  font-size: 20px;
+  margin: 20px;
 }
 
 /* Hero-card */
 .hero-card-form {
-  justify-content: space-around;
   width: 70%;
-  height: 120px;
-  background-color: #e9c46a80;
+  height: 140px;
+  background-color: #bababa80;
   align-self: center;
   padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-card-form label {
-  color: #264653;
+  color: black;
   font-size: 20px;
   font-weight: bold;
 }
 
 .hero-section input[type="text"] {
   width: 90%;
-  height: 30px;
+  height: 40px;
   border-radius: 5px;
   border: none;
   outline: none;
+  padding-left: 10px;
+  margin: 10px auto;
 }
 
-.hero-section button[type="submit"] {
+.hero-section button[type="button"] {
   width: 90%;
-  height: 30px;
+  height: 40px;
   border-radius: 5px;
-  background-color: #2a9d8f;
+  background-color: #e76f51;
   border: none;
   outline: none;
   color: white;
   font-weight: bold;
   font-size: 15px;
+  text-transform: uppercase;
 }
 
 .hero-section button[type="submit"]:hover {
@@ -181,6 +188,13 @@ nav {
 .how-it-works {
   justify-content: center;
   margin: 15px auto;
+}
+
+.h1-how-it-works {
+  text-align: center;
+  color: #e76f51;
+  margin: 20px auto;
+  font-size: 20px;
 }
 
 /* how it work cards */
@@ -223,21 +237,25 @@ nav {
 /* Our advantage seciton */
 
 .advantages-card {
-  height: 400px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .advantages-card.first {
-  background-color: #264653;
-  text-align: center;
-}
-
-.advantages-card.second {
   background-color: #f4a261;
   text-align: center;
 }
 
+.advantages-card.second {
+  background-color: #98a4a5;
+  text-align: center;
+}
+
 .advantages-card.third {
-  background-color: #2a9d8f;
+  background-color: #509cd8;
   text-align: center;
 }
 
@@ -350,7 +368,7 @@ nav {
 .footer-main-info-text {
   width: 60%;
   margin: 5px auto;
-  color: gray;
+  color: rgba(255, 255, 255, 0.705);
   font-size: 16px;
 }
 
