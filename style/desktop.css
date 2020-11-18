@@ -249,7 +249,6 @@ nav {
 
 .card-work-img:hover {
   transform: scale(1.25);
-  transition-duration: 1s;
 }
 
 .card-work-title {
