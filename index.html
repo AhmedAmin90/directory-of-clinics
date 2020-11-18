@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Stylesheets -->
+    <!-- mobile: up to 768px -->
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="./style/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and  (max-width: 1024px) and (min-width: 769px)"
+      href="./style/tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 1025px)"
+      href="./style/desktop.css"
+    />
+
+    <title>Clincs Directory</title>
+  </head>
+  <body>
+    <!-- Start on Header part -->
+    <header>
+      <nav class="flex-col nav-large-screen">
+        <div class="header-logo flex-row">
+          <img
+            class="header-logo-img"
+            src="./images/clinic-logo.jpg"
+            alt="clinic-logo"
+            onclick="location.href='index.html';"
+          />
+        </div>
+        <div class="header-links">
+          <ul class="header-ul flex-row">
+            <li>
+              <i
+                onclick="location.href='search.html';"
+                class="fas fa-search-location"
+              ></i>
+              <strong>
+                <a class="header-links-text" href="search.html">Clinics</a>
+              </strong>
+            </li>
+            <li>
+              <i onclick="location.href='#about-us';" class="far fa-user"></i>
+              <strong>
+                <a class="header-links-text" href="#about-us">About</a>
+              </strong>
+            </li>
+            <li>
+              <i class="fas fa-rss"></i>
+              <strong> <a class="header-links-text" href="#">Blog</a> </strong>
+            </li>
+            <li>
+              <i onclick="location.href='index.html';" class="fas fa-bars"></i>
+              <strong>
+                <a class="header-links-text" href="index.html">Home</a>
+              </strong>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero section -->
+      <section class="hero-section flex-col">
+        <h1 class="hero-card-header">Find Your Doctor and Book online Now !</h1>
+        <form class="hero-card-form">
+          <label for="search-input"> Search for clinic:</label>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Type the clinic name here"
+          /><button type="button" onclick="location.href='search.html'">
+            Search
+          </button>
+        </form>
+        <form class="hero-button" action="#how-it-works">
+          <input type="submit" value="How it works" />
+        </form>
+      </section>
+      <!-- How it works section -->
+
+      <div>
+        <h1 class="h1-how-it-works">
+          How Clicincs Directory Works ? Just Four simple steps:
+        </h1>
+      </div>
+      <section
+        id="how-it-works"
+        class="how-it-works flex-col how-it-works-large-screen"
+      >
+        <div class="how-it-works-cards">
+          <img
+            class="card-work-img"
+            src="./images/search-clinic.jpg"
+            alt="search-clinic"
+          />
+          <h1 class="card-work-title">1-Search:</h1>
+          <p class="card-work-text">
+            Serach for clinics in All your country according to the clinics
+            category and see all results from our great clinics directory.
+          </p>
+        </div>
+        <div class="how-it-works-cards">
+          <img
+            class="card-work-img"
+            src="./images/icon-location.jpg"
+            alt="search-clinic"
+          />
+          <h1 class="card-work-title">2-Locate:</h1>
+          <p class="card-work-text">
+            Determine the proper and near clinic for you and see all available
+            doctors from hundreds of qualified doctors in all specialists.
+          </p>
+        </div>
+        <div class="how-it-works-cards">
+          <img
+            class="card-work-img"
+            src="./images/book-clinic.png"
+            alt="search-clinic"
+          />
+          <h1 class="card-work-title">3-Book an appointment:</h1>
+          <p class="card-work-text">
+            Book your appointment with your doctor in your proper time from the
+            doctor calenders.
+          </p>
+        </div>
+        <div class="how-it-works-cards">
+          <img
+            class="card-work-img"
+            src="./images/visit-clinic.jpg"
+            alt="search-clinic"
+          />
+          <h1 class="card-work-title">4-Visit the Clinic at Time:</h1>
+          <p class="card-work-text">
+            Go to the clinic in your time and enjoy with our service .
+            <strong> It was not easy like this before !</strong>
+          </p>
+        </div>
+      </section>
+      <!-- our advantages section -->
+      <section class="our-advantages flex-col">
+        <div class="advantages-card first">
+          <div class="advantage-text">
+            <h1 class="advantages-card-title">Saving time, money and effort</h1>
+            <p class="advantages-card-text">
+              Searching a treatment can be more than a stressful, time consuming
+              and delicate task.
+            </p>
+            <button class="advantages-card-button" type="button">
+              See more !
+            </button>
+          </div>
+
+          <img
+            src="./images/saving-time-money.jpg"
+            alt="save-time-money"
+            class="advantages-card-img"
+          />
+        </div>
+        <div class="advantages-card second">
+          <div class="advantage-text">
+            <h1 class="advantages-card-title">Choose the best clinic</h1>
+            <p class="advantages-card-text">
+              Book the lowest price while benefiting from the high quality of
+              service.
+            </p>
+            <button class="advantages-card-button" type="button">
+              See more !
+            </button>
+          </div>
+
+          <img
+            src="./images/best-clinic.png"
+            alt="best-clinic"
+            class="advantages-card-img"
+          />
+        </div>
+        <div class="advantages-card third">
+          <div class="advantage-text">
+            <h1 class="advantages-card-title">Hundreds of Clinics</h1>
+            <p class="advantages-card-text">
+              Hundreds of clinics in all the countray are between your hands,
+              and you can book in one minute
+            </p>
+            <button class="advantages-card-button" type="button">
+              See more !
+            </button>
+          </div>
+
+          <img
+            src="./images/branches-icon.png"
+            alt="branches-icon"
+            class="advantages-card-img"
+          />
+        </div>
+      </section>
+    </main>
+    <!-- Footer section -->
+    <footer class="flex-col">
+      <div class="first-footer flex-col">
+        <div class="footer-main-links flex-col footer-main-links-large-screen">
+          <ul class="ul-first-footer flex-row">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SEARCH</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">ADVERTISE</a></li>
+          </ul>
+          <div class="footer-location-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <ul class="ul-first-footer flex-row">
+            <li><a href="#">FACEBOOK</a></li>
+            <li><a href="#">TWITTER</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">GOOGLE +</a></li>
+          </ul>
+        </div>
+
+        <div
+          class="footer-main-info flex-col footer-main-info-large"
+          id="about-us"
+        >
+          <div class="footer-main-info-card">
+            <form>
+              <h1 class="footer-main-info-title">SUBSCRIPTION</h1>
+              <input
+                class="footer-main-info-input"
+                type="email"
+                placeholder="you@example.com"
+              /><button class="footer-main-info-button" type="submit">
+                Send
+              </button>
+            </form>
+          </div>
+          <div class="footer-main-info-card">
+            <h1 class="footer-main-info-title">CONTACT</h1>
+            <p class="footer-main-info-text">
+              Contact us on our e-mail:info@clinics-directory.com
+            </p>
+          </div>
+          <div class="footer-main-info-card">
+            <h1 class="footer-main-info-title">ABOUT</h1>
+            <p class="footer-main-info-text">
+              The Biggest online clinics booking system in the Country
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="second-footer flex-col">
+        <div class="footer-social-icons flex-row">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-pinterest-p"></i>
+        </div>
+        <p class="footer-rights">
+          <i class="far fa-copyright"></i> 2020 Ahmed Amin - All Rights Reserved
+        </p>
+      </div>
+    </footer>
+    <!-- Fontawesome link -->
+    <script
+      src="https://kit.fontawesome.com/a4590f3e3a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

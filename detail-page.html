@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/detail.css" />
+    <title>Clinic details</title>
+  </head>
+  <body>
+    <!-- Start on Header part -->
+    <header>
+      <nav class="flex-col nav-large-screen">
+        <div class="header-logo flex-row">
+          <img
+            class="header-logo-img"
+            src="./images/clinic-logo.jpg"
+            alt="clinic-logo"
+            onclick="location.href='index.html';"
+          />
+        </div>
+        <div class="header-links">
+          <ul class="header-ul flex-row">
+            <li>
+              <i
+                onclick="location.href='search.html';"
+                class="fas fa-search-location"
+              ></i>
+              <strong>
+                <a class="header-links-text" href="search.html">Clinics</a>
+              </strong>
+            </li>
+            <li>
+              <i onclick="location.href='#about-us';" class="far fa-user"></i>
+              <strong>
+                <a class="header-links-text" href="#about-us">About</a>
+              </strong>
+            </li>
+            <li>
+              <i class="fas fa-rss"></i>
+              <strong> <a class="header-links-text" href="#">Blog</a> </strong>
+            </li>
+            <li>
+              <i onclick="location.href='index.html';" class="fas fa-bars"></i>
+              <strong>
+                <a class="header-links-text" href="index.html">Home</a>
+              </strong>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="clinic-details flex-col">
+        <div class="details-card">
+          <p>Telephone Number: <strong>0912345678</strong></p>
+        </div>
+        <div class="details-card">
+          <p>Email: <strong>info@clinic.com</strong></p>
+        </div>
+        <div class="details-card">
+          <p>Address: <strong>Street - city </strong></p>
+        </div>
+        <div class="details-card">
+          <p>Fax: <strong>09123456789</strong></p>
+        </div>
+        <div class="details-card">
+          <p>Working Hours: <strong>From 8 am to 6 pm</strong></p>
+        </div>
+        <div class="details-card">
+          <p>Working days <strong>From Mon to Fri</strong></p>
+        </div>
+        <div class="details-card flex-col">
+          <p>See calender and available doctors:</p>
+          <button class="appointment-btn" type="button">
+            Choose appointment
+          </button>
+        </div>
+      </section>
+
+      <section class="clinic-map">
+        <h1 class="map-title">
+          <i class="fas fa-map-marked-alt"></i> Clinic Location
+        </h1>
+        <div class="map flex-row">
+          <iframe
+            class="map-frame"
+            src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(clinic%20address)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="flex-col">
+      <div class="first-footer flex-col">
+        <div class="footer-main-links flex-col footer-main-links-large-screen">
+          <ul class="ul-first-footer flex-row">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SEARCH</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">ADVERTISE</a></li>
+          </ul>
+          <div class="footer-location-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <ul class="ul-first-footer flex-row">
+            <li><a href="#">FACEBOOK</a></li>
+            <li><a href="#">TWITTER</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">GOOGLE +</a></li>
+          </ul>
+        </div>
+
+        <div
+          class="footer-main-info flex-col footer-main-info-large"
+          id="about-us"
+        >
+          <div class="footer-main-info-card">
+            <form>
+              <h1 class="footer-main-info-title">SUBSCRIPTION</h1>
+              <input
+                class="footer-main-info-input"
+                type="email"
+                placeholder="you@example.com"
+              /><button class="footer-main-info-button" type="submit">
+                Send
+              </button>
+            </form>
+          </div>
+          <div class="footer-main-info-card">
+            <h1 class="footer-main-info-title">CONTACT</h1>
+            <p class="footer-main-info-text">
+              Contact us on our e-mail:info@clinics-directory.com
+            </p>
+          </div>
+          <div class="footer-main-info-card">
+            <h1 class="footer-main-info-title">ABOUT</h1>
+            <p class="footer-main-info-text">
+              The Biggest online clinics booking system in the Country
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="second-footer flex-col">
+        <div class="footer-social-icons flex-row">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-pinterest-p"></i>
+        </div>
+        <p class="footer-rights">
+          <i class="far fa-copyright"></i> 2020 Ahmed Amin - All Rights Reserved
+        </p>
+      </div>
+    </footer>
+
+    <!-- Fontawesome link -->
+    <script
+      src="https://kit.fontawesome.com/a4590f3e3a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

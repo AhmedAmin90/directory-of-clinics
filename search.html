@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/search-style.css" />
+    <title>Clinics Search Results</title>
+  </head>
+  <body>
+    <!-- Start on Header part -->
+    <header>
+      <nav class="flex-col nav-large-screen">
+        <div class="header-logo flex-row">
+          <img
+            class="header-logo-img"
+            src="./images/clinic-logo.jpg"
+            alt="clinic-logo"
+            onclick="location.href='index.html';"
+          />
+        </div>
+        <div class="header-links">
+          <ul class="header-ul flex-row">
+            <li>
+              <i
+                onclick="location.href='search.html';"
+                class="fas fa-search-location"
+              ></i>
+              <strong>
+                <a class="header-links-text" href="search.html">Clinics</a>
+              </strong>
+            </li>
+            <li>
+              <i onclick="location.href='#about-us';" class="far fa-user"></i>
+              <strong>
+                <a class="header-links-text" href="#about-us">About</a>
+              </strong>
+            </li>
+            <li>
+              <i class="fas fa-rss"></i>
+              <strong> <a class="header-links-text" href="#">Blog</a> </strong>
+            </li>
+            <li>
+              <i onclick="location.href='index.html';" class="fas fa-bars"></i>
+              <strong>
+                <a class="header-links-text" href="index.html">Home</a>
+              </strong>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="filter-section">
+        <p class="filter-section-title">Search for clinics by:</p>
+        <div class="flex-col filter-form-large-screen">
+          <form class="small-form-filter flex-col">
+            <label for="city">City</label>
+            <input type="text" id="city" placeholder="Name of City" />
+          </form>
+
+          <form class="small-form-filter flex-col">
+            <label for="doctor">Doctor</label>
+            <input type="text" id="doctor" placeholder="Name of Doctor" />
+          </form>
+          <form class="small-form-filter flex-col">
+            <label for="specialties">Specialties</label>
+            <input
+              type="text"
+              id="specialties"
+              placeholder="Medical Specialties"
+            />
+          </form>
+          <form class="small-form-filter flex-col">
+            <label for="area">Choose a Clinic area:</label>
+            <select name="area" id="area">
+              <option value="Area a">Area a</option>
+              <option value="Area b">Area b</option>
+              <option value="Area b">Area b</option>
+              <option value="Area c">Area c</option>
+            </select>
+          </form>
+
+          <button class="btn-filter-search btn-filter">Search</button>
+          <button class="btn-filter-clear btn-filter">
+            <i class="fas fa-eraser"></i> Clear filter
+          </button>
+        </div>
+      </section>
+
+      <section class="search-results flex-col">
+        <div class="result-card">
+          <img
+            src="./images/clinic-one.jpg"
+            alt="clinic-result"
+            class="result-card-img"
+          />
+          <p class="result-card-text">
+            <strong>Clinic one</strong> <br />
+            Adress: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Molestiae quidem.
+          </p>
+          <a class="clinic-link" href="detail-page.html">
+            Visit The clinic page</a
+          >
+        </div>
+        <div class="result-card">
+          <img
+            src="./images/clinic-two.jpg"
+            alt="clinic-result"
+            class="result-card-img"
+          />
+          <p class="result-card-text">
+            <strong>Clinic Two</strong> <br />
+            Adress: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Molestiae quidem.
+          </p>
+          <a class="clinic-link" href="detail-page.html">
+            Visit The clinic page</a
+          >
+        </div>
+        <div class="result-card">
+          <img
+            src="./images/clinic-three.jpg"
+            alt="clinic-result"
+            class="result-card-img"
+          />
+          <p class="result-card-text">
+            <strong>Clinic Three</strong> <br />
+            Adress: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Molestiae quidem.
+          </p>
+          <a class="clinic-link" href="detail-page.html">
+            Visit The clinic page</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="flex-col">
+      <div class="first-footer flex-col">
+        <div class="footer-main-links flex-col footer-main-links-large-screen">
+          <ul class="ul-first-footer flex-row">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SEARCH</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">ADVERTISE</a></li>
+          </ul>
+          <div class="footer-location-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <ul class="ul-first-footer flex-row">
+            <li><a href="#">FACEBOOK</a></li>
+            <li><a href="#">TWITTER</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">GOOGLE +</a></li>
+          </ul>
+        </div>
+
+        <div
+          class="footer-main-info flex-col footer-main-info-large"
+          id="about-us"
+        >
+          <div class="footer-main-info-card">
+            <form>
+              <h1 class="footer-main-info-title">SUBSCRIPTION</h1>
+              <input
+                class="footer-main-info-input"
+                type="email"
+                placeholder="you@example.com"
+              /><button class="footer-main-info-button" type="submit">
+                Send
+              </button>
+            </form>
+          </div>
+          <div class="footer-main-info-card">
+            <h1 class="footer-main-info-title">CONTACT</h1>
+            <p class="footer-main-info-text">
+              Contact us on our e-mail:info@clinics-directory.com
+            </p>
+          </div>
+          <div class="footer-main-info-card">
+            <h1 class="footer-main-info-title">ABOUT</h1>
+            <p class="footer-main-info-text">
+              The Biggest online clinics booking system in the Country
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="second-footer flex-col">
+        <div class="footer-social-icons flex-row">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-pinterest-p"></i>
+        </div>
+        <p class="footer-rights">
+          <i class="far fa-copyright"></i> 2020 Ahmed Amin - All Rights Reserved
+        </p>
+      </div>
+    </footer>
+    <!-- Fontawesome link -->
+    <script
+      src="https://kit.fontawesome.com/a4590f3e3a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
