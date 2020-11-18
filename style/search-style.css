@@ -169,6 +169,10 @@ ul {
 
   /*  Start on search results cards */
 
+  .search-results {
+    height: 1000px;
+  }
+
   .result-card {
     width: 80%;
     margin: 20px auto;
@@ -455,6 +459,10 @@ ul {
   }
 
   /* result cards */
+
+  .search-results {
+    height: 1200px;
+  }
 
   .search-results {
     height: 970px;
