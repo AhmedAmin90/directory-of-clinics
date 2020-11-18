@@ -124,7 +124,7 @@ ul {
     padding: 10px 0;
   }
 
-  strong {
+  .details-card strong {
     color: #4b97d6;
   }
 
@@ -360,7 +360,7 @@ ul {
     padding: 10px 0;
   }
 
-  strong {
+  .details-card strong {
     color: #4b97d6;
   }
 
@@ -623,7 +623,7 @@ ul {
     padding: 15px 0;
   }
 
-  strong {
+  .details-card strong {
     color: #4b97d6;
   }
 
