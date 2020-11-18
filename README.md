@@ -1,6 +1,6 @@
 # directory-of-clinics
 
-This is a capstone project for HTML and CSS part in Microverse program.
+This is a capstone project for HTML and CSS part of Microverse program.
 
 This project is an online clinic directory website, which contains 3 pages:
 
@@ -12,24 +12,24 @@ This project is an online clinic directory website, which contains 3 pages:
 
 ## How to navigate through the website:
 
-- Clinics link in the navbar takes you to the clinics search result page.
-- Inside the clinic card in clinic result page after you hover on any card it will show to you a link to the clinic details page.
-- About link in the Navbar takes you to footer section at about section.
+- Clinics link in the navbar takes you to the clinic's search result page.
+- Inside the clinic card in the clinic result page after you hover on any card it will show to you a link to the clinic details page.
+- About link in the Navbar takes you to the footer section at the about section.
 - Home link in the navbar takes you to the homepage.
 
 ## Animation:
 
 - Header logo.
-- Navvar icons.
+- Navbar icons.
 - How it works cards when hover.
 - Clinic cards inside clinic result page.
-- Choose appointment button in the details page.
+- Choose the appointment button on the details page.
 
 ## I used:
 
 - HTML5.
 - CSS3.
-- flex box.
+- flexbox.
 - Fontawesome.
 - CSS animation.
 
@@ -43,13 +43,13 @@ This project is an online clinic directory website, which contains 3 pages:
 
 # General content:
 
-- Each page contains responsive Header and Footer.
+- Each page contains a responsive Header and Footer.
 
 # Home page:
 
-- Box for serach.
+- Box for search.
 - 4 cards display How the website for online clinic reservation works.
-- 3 cards display the most important advantages for using this website.
+- 3 cards display the most important advantages of using this website.
 
 - ScreenShot for the desktop version of the page:
   ![screenshot](./images/desktop-homepage-screen.png)
@@ -62,9 +62,9 @@ This project is an online clinic directory website, which contains 3 pages:
 - ScreenShot for the desktop version of the page:
   ![screenshot](./images/desktop-searchresult-screen.png)
 
-# Internal clinic page (detatils page):
+# Internal clinic page (details page):
 
-- clinic location with embede google map.
+- clinic location with embedded google map.
 - clinic basic information.
 
 - ScreenShot for the desktop version of the page:
@@ -72,19 +72,19 @@ This project is an online clinic directory website, which contains 3 pages:
 
 ## Live Demo
 
-Here you will find a Live Demo page, any comment is well recieved.
+Here you will find a Live Demo page, any comment is well received.
 
 [Live Demo Link](https://raw.githack.com/AhmedAmin90/directory-of-clinics/project/index.html)
 
 ## Authors
 
-Please feel free to contact me in any time:
+Please feel free to contact me at any time:
 
 😎 **Ahmed Amin**
 
-- GitHub: [@githubhandle](https://github.com/AhmedAmin90)
-- Twitter: [@twitterhandle](https://twitter.com/AhmedAmin12383)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ahmed-amin-quality/)
+- Github: [@AhmedAmin90](https://github.com/AhmedAmin90)
+- Twitter: [@AhmedAmin12383](https://twitter.com/AhmedAmin12383)
+- LinkedIn: [in/web-developer](https://www.linkedin.com/in/web-developer)
 
 ## 🤝 Contributing
 
@@ -95,11 +95,11 @@ Feel free to check the [issues page](https://github.com/AhmedAmin90/directory-of
 ## Show your support
 
 Give a ⭐️ if you like this project!
-Also advices are well recieved.
+Also, the advice is well received.
 
 ## Thanks for Design Idea:
 
-This design is modified from : https://www.behance.net/gallery/25563385/PatashuleKE
+This design is modified from: https://www.behance.net/gallery/25563385/PatashuleKE
 Designed by:
 
 - Mathew Njuguna from Nairobi, Kenya.
