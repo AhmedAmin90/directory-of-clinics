@@ -1,11 +1,12 @@
 /* General */
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
 * {
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
 }
 
 .fas,
@@ -21,6 +22,7 @@ a {
 
 i,
 a,
+img,
 button:hover {
   cursor: pointer;
 }
@@ -80,9 +82,8 @@ nav {
   display: none;
 }
 
-.header-ul > li > i,
-a {
-  font-size: 20px;
+.header-links-text {
+  font-size: 15px;
 }
 
 .header-ul > li > i {
@@ -323,8 +324,12 @@ a {
 .footer-main-info-input {
   outline: none;
   border: none;
-  width: 60%;
+  width: 70%;
   height: 30px;
+  padding-left: 5px;
+  background-color: black;
+  border: 1px solid #444;
+  border-right: none;
 }
 
 .footer-main-info-title {
@@ -335,11 +340,12 @@ a {
 }
 
 .footer-main-info-button {
-  width: 35%;
+  width: 25%;
   height: 30px;
-  background-color: #e9c46a;
+  background-color: #444;
   outline: none;
   border: none;
+  color: white;
 }
 
 .footer-main-info-text {

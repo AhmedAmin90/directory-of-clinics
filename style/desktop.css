@@ -1,11 +1,10 @@
 /* General */
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-
 * {
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 .fas,
@@ -21,6 +20,7 @@ a {
 
 i,
 a,
+img,
 button:hover {
   cursor: pointer;
 }
@@ -42,7 +42,7 @@ ul {
 /* Header */
 header {
   background-color: #e76f51;
-  height: 110px;
+  height: 70px;
 }
 
 /* Nav section */
@@ -66,8 +66,8 @@ nav {
 }
 
 .header-logo-img {
-  width: 100px;
-  height: 100px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   transition-duration: 2s;
   transition-timing-function: ease-in-out;
@@ -78,7 +78,7 @@ nav {
 }
 
 .header-links {
-  width: 60%;
+  width: 50%;
 }
 
 .header-links strong {
@@ -89,9 +89,8 @@ nav {
   justify-content: space-around;
 }
 
-.header-ul > li > i,
-a {
-  font-size: 20px;
+.header-links-text {
+  font-size: 15px;
 }
 
 .header-ul > li > i {
@@ -112,59 +111,69 @@ a {
   width: 100%;
   background: url("../images/clinic-bg-hero-section.jpg") no-repeat center;
   background-size: cover;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 /* Hero - text */
 .hero-card-header {
-  color: #2a9d8f;
+  color: white;
   text-align: center;
   text-transform: uppercase;
   align-self: center;
   font-size: 30px;
+  margin: 20px;
 }
 
 /* Hero-card */
 .hero-card-form {
   justify-content: space-around;
   width: 50%;
-  height: 200px;
-  background-color: #e9c46a80;
+  height: 130px;
+  background-color: #bababa80;
   align-self: center;
   padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .hero-card-form label {
-  color: #264653;
+  color: black;
   font-size: 30px;
   font-weight: bold;
 }
 
 .hero-section input[type="text"] {
-  width: 90%;
-  height: 30px;
+  width: 70%;
+  height: 40px;
   border-radius: 5px;
   border: none;
   outline: none;
-  padding: 5px;
+  padding-left: 10px;
+  padding-top: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .hero-section input[type="text"]::placeholder {
   color: #264653;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .hero-section button[type="submit"] {
-  width: 50%;
+  width: 20%;
   height: 40px;
   border-radius: 5px;
-  background-color: #2a9d8f;
+  background-color: #e76f51;
   border: none;
   outline: none;
   color: white;
   font-weight: bold;
   font-size: 15px;
-  align-self: center;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  text-transform: uppercase;
+  padding-top: 5px;
+  padding-bottom: 2px;
 }
 
 .hero-section button[type="submit"]:hover {
@@ -178,12 +187,12 @@ a {
 }
 
 .hero-button input[type="submit"] {
-  width: 200px;
+  width: 130px;
   height: 40px;
   padding: 5px;
   border-radius: 5px;
   border: 1px solid #f4a261;
-  color: #2a9d8f;
+  color: black;
   font-size: 15px;
   font-weight: bold;
 }
@@ -201,6 +210,13 @@ a {
 }
 
 /* how it work cards */
+
+.h1-how-it-works {
+  text-align: center;
+  color: #e76f51;
+  margin: 60px auto;
+}
+
 .how-it-works-cards {
   width: 40%;
   height: 30%;
@@ -209,7 +225,7 @@ a {
   background-color: #b7b7a420;
   padding: 15px;
   border-radius: 5px;
-  transition-duration: 1.5s;
+  transition-duration: 0.75s;
   transition-timing-function: ease-in-out;
 }
 
@@ -221,7 +237,7 @@ a {
 
 .how-it-works-cards:hover {
   background-color: #b7b7a480;
-  transform: rotate(10deg);
+  transform: rotate(5deg);
 }
 
 .card-work-img {
@@ -335,7 +351,7 @@ a {
 
 .ul-first-footer > li {
   margin: 5px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .footer-location-icon {
@@ -376,10 +392,12 @@ a {
 
 .footer-main-info-input {
   outline: none;
-  border: none;
-  width: 80%;
-  height: 30px;
+  border: 1px solid #444;
+  border-right: none;
+  width: 60%;
+  height: 40px;
   padding: 5px;
+  background-color: black;
 }
 
 .footer-main-info-title {
@@ -390,18 +408,18 @@ a {
 }
 
 .footer-main-info-button {
-  width: 50%;
+  width: 30%;
   height: 40px;
-  background-color: #e9c46a;
+  background-color: #444;
   outline: none;
   border: none;
   margin-top: 5px;
-  padding: 10px;
+  color: white;
 }
 
 .footer-main-info-text {
   margin: 5px auto;
-  color: gray;
+  color: rgba(255, 255, 255, 0.705);
   font-size: 16px;
 }
 

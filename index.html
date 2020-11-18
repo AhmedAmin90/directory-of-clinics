@@ -41,153 +41,166 @@
                 onclick="location.href='search.html';"
                 class="fas fa-search-location"
               ></i>
-              <strong> <a href="search.html">Clinics</a> </strong>
+              <strong>
+                <a class="header-links-text" href="search.html">Clinics</a>
+              </strong>
             </li>
             <li>
               <i onclick="location.href='#about-us';" class="far fa-user"></i>
-              <strong> <a href="#about-us">About</a> </strong>
+              <strong>
+                <a class="header-links-text" href="#about-us">About</a>
+              </strong>
             </li>
             <li>
               <i class="fas fa-rss"></i>
-              <strong> <a href="#">Blog</a> </strong>
+              <strong> <a class="header-links-text" href="#">Blog</a> </strong>
             </li>
             <li>
               <i onclick="location.href='index.html';" class="fas fa-bars"></i>
-              <strong> <a href="index.html">Home</a> </strong>
+              <strong>
+                <a class="header-links-text" href="index.html">Home</a>
+              </strong>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-
-    <!-- Hero section -->
-    <section class="hero-section flex-col">
-      <h1 class="hero-card-header">Find Your Doctor and Book online Now !</h1>
-      <form class="hero-card-form flex-col">
-        <label for="search-input"> Search for clinic:</label>
-        <input
-          type="text"
-          id="search-input"
-          placeholder="Type the clinic name here"
-        />
-        <button type="submit">Search</button>
-      </form>
-      <form class="hero-button" action="#how-it-works">
-        <input type="submit" value="How it works" />
-      </form>
-    </section>
-    <!-- How it works section -->
-    <section
-      id="how-it-works"
-      class="how-it-works flex-col how-it-works-large-screen"
-    >
-      <div class="how-it-works-cards">
-        <img
-          class="card-work-img"
-          src="./images/search-clinic.jpg"
-          alt="search-clinic"
-        />
-        <h1 class="card-work-title">1-Search:</h1>
-        <p class="card-work-text">
-          Serach for clinics in All your country according to the clinics
-          category and see all results from our great clinics directory.
-        </p>
-      </div>
-      <div class="how-it-works-cards">
-        <img
-          class="card-work-img"
-          src="./images/icon-location.jpg"
-          alt="search-clinic"
-        />
-        <h1 class="card-work-title">2-Locate:</h1>
-        <p class="card-work-text">
-          Determine the proper and near clinic for you and see all available
-          doctors from hundreds of qualified doctors in all specialists.
-        </p>
-      </div>
-      <div class="how-it-works-cards">
-        <img
-          class="card-work-img"
-          src="./images/book-clinic.png"
-          alt="search-clinic"
-        />
-        <h1 class="card-work-title">3-Book an appointment:</h1>
-        <p class="card-work-text">
-          Book your appointment with your doctor in your proper time from the
-          doctor calenders.
-        </p>
-      </div>
-      <div class="how-it-works-cards">
-        <img
-          class="card-work-img"
-          src="./images/visit-clinic.jpg"
-          alt="search-clinic"
-        />
-        <h1 class="card-work-title">4-Visit the Clinic at Time:</h1>
-        <p class="card-work-text">
-          Go to the clinic in your time and enjoy with our service .
-          <strong> It was not easy like this before !</strong>
-        </p>
-      </div>
-    </section>
-    <!-- our advantages section -->
-    <section class="our-advantages flex-col">
-      <div class="advantages-card first">
-        <div class="advantage-text">
-          <h1 class="advantages-card-title">Saving time, money and effort</h1>
-          <p class="advantages-card-text">
-            Searching a treatment can be more than a stressful, time consuming
-            and delicate task.
-          </p>
-          <button class="advantages-card-button" type="button">
-            See more !
+    <main>
+      <!-- Hero section -->
+      <section class="hero-section flex-col">
+        <h1 class="hero-card-header">Find Your Doctor and Book online Now !</h1>
+        <form class="hero-card-form">
+          <label for="search-input"> Search for clinic:</label>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Type the clinic name here"
+          /><button type="submit" onclick="location.href='search.html';">
+            <a href="search.html">Search</a>
           </button>
-        </div>
+        </form>
+        <form class="hero-button" action="#how-it-works">
+          <input type="submit" value="How it works" />
+        </form>
+      </section>
+      <!-- How it works section -->
 
-        <img
-          src="./images/saving-time-money.jpg"
-          alt="save-time-money"
-          class="advantages-card-img"
-        />
+      <div>
+        <h1 class="h1-how-it-works">
+          How Clicincs Directory Works ? Just Four simple steps:
+        </h1>
       </div>
-      <div class="advantages-card second">
-        <div class="advantage-text">
-          <h1 class="advantages-card-title">Choose the best clinic</h1>
-          <p class="advantages-card-text">
-            Book the lowest price while benefiting from the high quality of
-            service.
+      <section
+        id="how-it-works"
+        class="how-it-works flex-col how-it-works-large-screen"
+      >
+        <div class="how-it-works-cards">
+          <img
+            class="card-work-img"
+            src="./images/search-clinic.jpg"
+            alt="search-clinic"
+          />
+          <h1 class="card-work-title">1-Search:</h1>
+          <p class="card-work-text">
+            Serach for clinics in All your country according to the clinics
+            category and see all results from our great clinics directory.
           </p>
-          <button class="advantages-card-button" type="button">
-            See more !
-          </button>
         </div>
-
-        <img
-          src="./images/best-clinic.png"
-          alt="best-clinic"
-          class="advantages-card-img"
-        />
-      </div>
-      <div class="advantages-card third">
-        <div class="advantage-text">
-          <h1 class="advantages-card-title">Hundreds of Clinics</h1>
-          <p class="advantages-card-text">
-            Hundreds of clinics in all the countray are between your hands, and
-            you can book in one minute
+        <div class="how-it-works-cards">
+          <img
+            class="card-work-img"
+            src="./images/icon-location.jpg"
+            alt="search-clinic"
+          />
+          <h1 class="card-work-title">2-Locate:</h1>
+          <p class="card-work-text">
+            Determine the proper and near clinic for you and see all available
+            doctors from hundreds of qualified doctors in all specialists.
           </p>
-          <button class="advantages-card-button" type="button">
-            See more !
-          </button>
         </div>
+        <div class="how-it-works-cards">
+          <img
+            class="card-work-img"
+            src="./images/book-clinic.png"
+            alt="search-clinic"
+          />
+          <h1 class="card-work-title">3-Book an appointment:</h1>
+          <p class="card-work-text">
+            Book your appointment with your doctor in your proper time from the
+            doctor calenders.
+          </p>
+        </div>
+        <div class="how-it-works-cards">
+          <img
+            class="card-work-img"
+            src="./images/visit-clinic.jpg"
+            alt="search-clinic"
+          />
+          <h1 class="card-work-title">4-Visit the Clinic at Time:</h1>
+          <p class="card-work-text">
+            Go to the clinic in your time and enjoy with our service .
+            <strong> It was not easy like this before !</strong>
+          </p>
+        </div>
+      </section>
+      <!-- our advantages section -->
+      <section class="our-advantages flex-col">
+        <div class="advantages-card first">
+          <div class="advantage-text">
+            <h1 class="advantages-card-title">Saving time, money and effort</h1>
+            <p class="advantages-card-text">
+              Searching a treatment can be more than a stressful, time consuming
+              and delicate task.
+            </p>
+            <button class="advantages-card-button" type="button">
+              See more !
+            </button>
+          </div>
 
-        <img
-          src="./images/branches-icon.png"
-          alt="branches-icon"
-          class="advantages-card-img"
-        />
-      </div>
-    </section>
+          <img
+            src="./images/saving-time-money.jpg"
+            alt="save-time-money"
+            class="advantages-card-img"
+          />
+        </div>
+        <div class="advantages-card second">
+          <div class="advantage-text">
+            <h1 class="advantages-card-title">Choose the best clinic</h1>
+            <p class="advantages-card-text">
+              Book the lowest price while benefiting from the high quality of
+              service.
+            </p>
+            <button class="advantages-card-button" type="button">
+              See more !
+            </button>
+          </div>
 
+          <img
+            src="./images/best-clinic.png"
+            alt="best-clinic"
+            class="advantages-card-img"
+          />
+        </div>
+        <div class="advantages-card third">
+          <div class="advantage-text">
+            <h1 class="advantages-card-title">Hundreds of Clinics</h1>
+            <p class="advantages-card-text">
+              Hundreds of clinics in all the countray are between your hands,
+              and you can book in one minute
+            </p>
+            <button class="advantages-card-button" type="button">
+              See more !
+            </button>
+          </div>
+
+          <img
+            src="./images/branches-icon.png"
+            alt="branches-icon"
+            class="advantages-card-img"
+          />
+        </div>
+      </section>
+    </main>
     <!-- Footer section -->
     <footer class="flex-col">
       <div class="first-footer flex-col">
@@ -220,8 +233,7 @@
                 class="footer-main-info-input"
                 type="email"
                 placeholder="you@example.com"
-              />
-              <button class="footer-main-info-button" type="submit">
+              /><button class="footer-main-info-button" type="submit">
                 Send
               </button>
             </form>
