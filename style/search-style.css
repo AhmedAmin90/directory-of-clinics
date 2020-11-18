@@ -1,11 +1,10 @@
 /* General */
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-
 * {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 .fas,
@@ -46,7 +45,7 @@ ul {
   /* Header */
   header {
     background-color: #e76f51;
-    height: 200px;
+    height: 120px;
   }
 
   /* Nav section */
@@ -63,8 +62,8 @@ ul {
   }
 
   .header-logo-img {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     transition-duration: 2s;
     transition-timing-function: ease-in-out;
@@ -84,9 +83,8 @@ ul {
     display: none;
   }
 
-  .header-ul > li > i,
-  a {
-    font-size: 20px;
+  .header-links-text {
+    font-size: 15px;
   }
 
   .header-ul > li > i {
@@ -190,9 +188,9 @@ ul {
     justify-content: center;
   }
 
-  .ul-first-footer > li {
+  .ul-first-footer > li a {
     margin: 5px;
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .footer-location-icon {
@@ -220,9 +218,12 @@ ul {
 
   .footer-main-info-input {
     outline: none;
-    border: none;
-    width: 60%;
+    width: 70%;
     height: 30px;
+    padding-left: 5px;
+    background-color: black;
+    border: 1px solid #444;
+    border-right: none;
   }
 
   .footer-main-info-title {
@@ -233,17 +234,18 @@ ul {
   }
 
   .footer-main-info-button {
-    width: 35%;
+    width: 25%;
     height: 30px;
-    background-color: #e9c46a;
+    background-color: #444;
     outline: none;
     border: none;
+    color: white;
   }
 
   .footer-main-info-text {
     width: 60%;
     margin: 5px auto;
-    color: gray;
+    color: rgba(255, 255, 255, 0.705);
     font-size: 16px;
   }
 
@@ -274,7 +276,7 @@ ul {
   /* Header */
   header {
     background-color: #e76f51;
-    height: 110px;
+    height: 80px;
   }
 
   /* Nav section */
@@ -298,8 +300,8 @@ ul {
   }
 
   .header-logo-img {
-    width: 100px;
-    height: 100px;
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
     transition-duration: 2s;
     transition-timing-function: ease-in-out;
@@ -310,7 +312,7 @@ ul {
   }
 
   .header-links {
-    width: 60%;
+    width: 50%;
   }
 
   .header-links strong {
@@ -321,9 +323,8 @@ ul {
     justify-content: space-around;
   }
 
-  .header-ul > li > i,
-  a {
-    font-size: 20px;
+  .header-links-text {
+    font-size: 15px;
   }
 
   .header-ul > li > i {
@@ -432,12 +433,13 @@ ul {
   .footer-main-links {
     border-top: 1px solid white;
     border-bottom: 1px solid white;
-    margin: 20px 5px;
+    margin: 30px 5px;
     padding: 20px 5px;
   }
 
   .ul-first-footer {
-    justify-content: center;
+    width: 50%;
+    justify-content: space-around;
   }
 
   .ul-first-footer > li {
@@ -483,10 +485,12 @@ ul {
 
   .footer-main-info-input {
     outline: none;
-    border: none;
-    width: 80%;
+    width: 60%;
     height: 30px;
     padding: 5px;
+    background-color: black;
+    border: 1px solid #444;
+    border-right: none;
   }
 
   .footer-main-info-title {
@@ -497,18 +501,18 @@ ul {
   }
 
   .footer-main-info-button {
-    width: 50%;
-    height: 40px;
-    background-color: #e9c46a;
+    width: 30%;
+    height: 30px;
+    background-color: #444;
     outline: none;
     border: none;
     margin-top: 5px;
-    padding: 10px;
+    color: white;
   }
 
   .footer-main-info-text {
     margin: 5px auto;
-    color: gray;
+    color: rgba(255, 255, 255, 0.705);
     font-size: 16px;
   }
 
@@ -541,10 +545,9 @@ ul {
 
 @media screen and (min-width: 1025px) {
   /* Header */
-
   header {
     background-color: #e76f51;
-    height: 110px;
+    height: 70px;
   }
 
   /* Nav section */
@@ -568,8 +571,8 @@ ul {
   }
 
   .header-logo-img {
-    width: 100px;
-    height: 100px;
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
     transition-duration: 2s;
     transition-timing-function: ease-in-out;
@@ -580,7 +583,7 @@ ul {
   }
 
   .header-links {
-    width: 60%;
+    width: 50%;
   }
 
   .header-links strong {
@@ -591,9 +594,8 @@ ul {
     justify-content: space-around;
   }
 
-  .header-ul > li > i,
-  a {
-    font-size: 20px;
+  .header-links-text {
+    font-size: 15px;
   }
 
   .header-ul > li > i {
@@ -610,31 +612,39 @@ ul {
   /* Start on filter section */
 
   .filter-section {
-    width: 50%;
-    margin: -20px auto 20px auto;
+    width: 100%;
+    margin: 60px 0;
     padding: 20px;
-    height: 100px;
-    background-color: #e9c46a;
+    height: 250px;
+    background-color: #edf0f1;
     border-radius: 5px;
   }
 
   .filter-form-large-screen {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 25px;
+  }
+
+  .small-form-filter {
+    width: 20%;
+    height: 35%;
+    justify-content: space-around;
   }
 
   .filter-section-title {
     font-size: 30px;
     text-align: center;
-    color: #264653;
-    margin-bottom: 20px;
+    color: #aaa5a2;
+    margin: 20px auto;
   }
 
   .filter-section label {
-    color: #264653;
-    font-size: 20px;
-    margin: auto 10px;
+    color: #7b7b7e;
+    font-size: 15px;
+    font-weight: bold;
   }
 
   .filter-section input {
@@ -642,7 +652,37 @@ ul {
     outline: none;
     border: none;
     padding: 0 10px;
-    width: 20%;
+    width: 95%;
+  }
+
+  select {
+    width: 95%;
+    height: 30px;
+    outline: none;
+    border: none;
+    color: #679ac2;
+  }
+
+  .btn-filter {
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 30px 5px;
+  }
+
+  .btn-filter-search {
+    width: 8%;
+    background-color: #457eb4;
+  }
+
+  .btn-filter-clear {
+    width: 10%;
+    background-color: #e5ab5a;
   }
 
   /* result cards */
@@ -720,12 +760,13 @@ ul {
   }
 
   .ul-first-footer {
-    justify-content: center;
+    width: 50%;
+    justify-content: space-around;
   }
 
   .ul-first-footer > li {
     margin: 5px;
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .footer-location-icon {
@@ -766,10 +807,12 @@ ul {
 
   .footer-main-info-input {
     outline: none;
-    border: none;
-    width: 80%;
-    height: 30px;
+    border: 1px solid #444;
+    border-right: none;
+    width: 60%;
+    height: 40px;
     padding: 5px;
+    background-color: black;
   }
 
   .footer-main-info-title {
@@ -780,18 +823,18 @@ ul {
   }
 
   .footer-main-info-button {
-    width: 50%;
+    width: 30%;
     height: 40px;
-    background-color: #e9c46a;
+    background-color: #444;
     outline: none;
     border: none;
     margin-top: 5px;
-    padding: 10px;
+    color: white;
   }
 
   .footer-main-info-text {
     margin: 5px auto;
-    color: gray;
+    color: rgba(255, 255, 255, 0.705);
     font-size: 16px;
   }
 

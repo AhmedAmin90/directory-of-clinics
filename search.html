@@ -25,84 +25,118 @@
                 onclick="location.href='search.html';"
                 class="fas fa-search-location"
               ></i>
-              <strong> <a href="search.html">Clinics</a> </strong>
+              <strong>
+                <a class="header-links-text" href="search.html">Clinics</a>
+              </strong>
             </li>
             <li>
               <i onclick="location.href='#about-us';" class="far fa-user"></i>
-              <strong> <a href="#about-us">About</a> </strong>
+              <strong>
+                <a class="header-links-text" href="#about-us">About</a>
+              </strong>
             </li>
             <li>
               <i class="fas fa-rss"></i>
-              <strong> <a href="#">Blog</a> </strong>
+              <strong> <a class="header-links-text" href="#">Blog</a> </strong>
             </li>
             <li>
               <i onclick="location.href='index.html';" class="fas fa-bars"></i>
-              <strong> <a href="index.html">Home</a> </strong>
+              <strong>
+                <a class="header-links-text" href="index.html">Home</a>
+              </strong>
             </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <section class="filter-section">
-      <p class="filter-section-title">Search for clinics by:</p>
-      <form class="flex-col filter-form-large-screen">
-        <label for="city">City</label>
-        <input type="text" id="city" placeholder="Name of City" />
-        <label for="doctor">Doctor</label>
-        <input type="text" id="doctor" placeholder="Name of Doctor" />
-        <label for="specialties">Specialties</label>
-        <input type="text" id="specialties" placeholder="Medical Specialties" />
-      </form>
-    </section>
+    <main>
+      <section class="filter-section">
+        <p class="filter-section-title">Search for clinics by:</p>
+        <div class="flex-col filter-form-large-screen">
+          <form class="small-form-filter flex-col">
+            <label for="city">City</label>
+            <input type="text" id="city" placeholder="Name of City" />
+          </form>
 
-    <section class="search-results flex-col">
-      <div class="result-card">
-        <img
-          src="./images/clinic-one.jpg"
-          alt="clinic-result"
-          class="result-card-img"
-        />
-        <p class="result-card-text">
-          <strong>Clinic one</strong> <br />
-          Adress: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Molestiae quidem.
-        </p>
-        <a class="clinic-link" href="detail-page.html">
-          Visit The clinic page</a
-        >
-      </div>
-      <div class="result-card">
-        <img
-          src="./images/clinic-two.jpg"
-          alt="clinic-result"
-          class="result-card-img"
-        />
-        <p class="result-card-text">
-          <strong>Clinic Two</strong> <br />
-          Adress: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Molestiae quidem.
-        </p>
-        <a class="clinic-link" href="detail-page.html">
-          Visit The clinic page</a
-        >
-      </div>
-      <div class="result-card">
-        <img
-          src="./images/clinic-three.jpg"
-          alt="clinic-result"
-          class="result-card-img"
-        />
-        <p class="result-card-text">
-          <strong>Clinic Three</strong> <br />
-          Adress: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Molestiae quidem.
-        </p>
-        <a class="clinic-link" href="detail-page.html">
-          Visit The clinic page</a
-        >
-      </div>
-    </section>
+          <form class="small-form-filter flex-col">
+            <label for="doctor">Doctor</label>
+            <input type="text" id="doctor" placeholder="Name of Doctor" />
+          </form>
+          <form class="small-form-filter flex-col">
+            <label for="specialties">Specialties</label>
+            <input
+              type="text"
+              id="specialties"
+              placeholder="Medical Specialties"
+            />
+          </form>
+          <form class="small-form-filter flex-col">
+            <label for="cars">Choose a Clinic area:</label>
+            <select name="area" id="area">
+              <option></option>
+              <option value="Area a">Area a</option>
+              <option value="Area b">Area b</option>
+              <option value="Area b">Area b</option>
+              <option value="Area c">Area c</option>
+            </select>
+          </form>
+
+          <button class="btn-filter-search btn-filter">Search</button>
+          <button class="btn-filter-clear btn-filter">
+            <i class="fas fa-eraser"></i> Clear filter
+          </button>
+        </div>
+      </section>
+
+      <section class="search-results flex-col">
+        <div class="result-card">
+          <img
+            src="./images/clinic-one.jpg"
+            alt="clinic-result"
+            class="result-card-img"
+          />
+          <p class="result-card-text">
+            <strong>Clinic one</strong> <br />
+            Adress: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Molestiae quidem.
+          </p>
+          <a class="clinic-link" href="detail-page.html">
+            Visit The clinic page</a
+          >
+        </div>
+        <div class="result-card">
+          <img
+            src="./images/clinic-two.jpg"
+            alt="clinic-result"
+            class="result-card-img"
+          />
+          <p class="result-card-text">
+            <strong>Clinic Two</strong> <br />
+            Adress: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Molestiae quidem.
+          </p>
+          <a class="clinic-link" href="detail-page.html">
+            Visit The clinic page</a
+          >
+        </div>
+        <div class="result-card">
+          <img
+            src="./images/clinic-three.jpg"
+            alt="clinic-result"
+            class="result-card-img"
+          />
+          <p class="result-card-text">
+            <strong>Clinic Three</strong> <br />
+            Adress: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Molestiae quidem.
+          </p>
+          <a class="clinic-link" href="detail-page.html">
+            Visit The clinic page</a
+          >
+        </div>
+      </section>
+    </main>
 
     <!-- Footer section -->
     <footer class="flex-col">
@@ -136,8 +170,7 @@
                 class="footer-main-info-input"
                 type="email"
                 placeholder="you@example.com"
-              />
-              <button class="footer-main-info-button" type="submit">
+              /><button class="footer-main-info-button" type="submit">
                 Send
               </button>
             </form>
@@ -168,7 +201,6 @@
         </p>
       </div>
     </footer>
-
     <!-- Fontawesome link -->
     <script
       src="https://kit.fontawesome.com/a4590f3e3a.js"
