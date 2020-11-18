@@ -1,11 +1,10 @@
 /* General */
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-
 * {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 .fas,
@@ -46,7 +45,7 @@ ul {
   /* Header */
   header {
     background-color: #e76f51;
-    height: 200px;
+    height: 120px;
   }
 
   /* Nav section */
@@ -63,8 +62,8 @@ ul {
   }
 
   .header-logo-img {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     transition-duration: 2s;
     transition-timing-function: ease-in-out;
@@ -84,9 +83,8 @@ ul {
     display: none;
   }
 
-  .header-ul > li > i,
-  a {
-    font-size: 20px;
+  .header-links-text {
+    font-size: 15px;
   }
 
   .header-ul > li > i {
@@ -100,34 +98,34 @@ ul {
     color: #264653;
   }
 
-  /* Start on clinic map section */
-
-  .map-title {
-    text-align: center;
-    color: #264653;
-    margin: 10px auto;
-  }
-
-  .map-frame {
-    width: 90%;
-    height: 300px;
-    margin: 10px auto;
-  }
-
   /* Start on clinic details section */
 
   .clinic-details {
+    display: flex;
+    flex-direction: column;
     height: 400px;
+    width: 75%;
+    margin: 40px auto;
+    padding-top: 20px;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.5);
+    justify-content: space-between;
+    align-items: center;
   }
 
   .details-card {
-    height: 30px;
-    background-color: #f3b5a6;
-    border: 1px solid #264653;
+    width: 70%;
+    height: 50px;
+    border: 1px solid #444;
     border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
+    margin: 5px auto;
     text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+
+  strong {
+    color: #4b97d6;
   }
 
   .appointment-btn {
@@ -137,11 +135,33 @@ ul {
     font-weight: bold;
     transition-timing-function: ease-in-out;
     transition-duration: 0.75s;
+    transform: translateX(20px);
   }
 
   .appointment-btn:hover {
-    padding: 10px;
-    transform: translateY(10px);
+    transform: translateY(5px);
+  }
+
+  /* Start on clinic map section */
+
+  .clinic-map {
+    margin: 20px auto;
+  }
+
+  .map-title {
+    text-align: center;
+    color: #e76f51;
+    margin: 20px auto;
+  }
+
+  .fa-map-marked-alt {
+    color: #e76f51;
+  }
+
+  .map-frame {
+    width: 90%;
+    height: 300px;
+    margin: 10px auto;
   }
 
   /* Footer section */
@@ -164,9 +184,9 @@ ul {
     justify-content: center;
   }
 
-  .ul-first-footer > li {
+  .ul-first-footer > li a {
     margin: 5px;
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .footer-location-icon {
@@ -194,9 +214,12 @@ ul {
 
   .footer-main-info-input {
     outline: none;
-    border: none;
-    width: 60%;
+    width: 70%;
     height: 30px;
+    padding-left: 5px;
+    background-color: black;
+    border: 1px solid #444;
+    border-right: none;
   }
 
   .footer-main-info-title {
@@ -207,17 +230,18 @@ ul {
   }
 
   .footer-main-info-button {
-    width: 35%;
+    width: 25%;
     height: 30px;
-    background-color: #e9c46a;
+    background-color: #444;
     outline: none;
     border: none;
+    color: white;
   }
 
   .footer-main-info-text {
     width: 60%;
     margin: 5px auto;
-    color: gray;
+    color: rgba(255, 255, 255, 0.705);
     font-size: 16px;
   }
 
@@ -248,7 +272,7 @@ ul {
   /* Header */
   header {
     background-color: #e76f51;
-    height: 110px;
+    height: 80px;
   }
 
   /* Nav section */
@@ -272,8 +296,8 @@ ul {
   }
 
   .header-logo-img {
-    width: 100px;
-    height: 100px;
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
     transition-duration: 2s;
     transition-timing-function: ease-in-out;
@@ -284,7 +308,7 @@ ul {
   }
 
   .header-links {
-    width: 60%;
+    width: 50%;
   }
 
   .header-links strong {
@@ -295,9 +319,8 @@ ul {
     justify-content: space-around;
   }
 
-  .header-ul > li > i,
-  a {
-    font-size: 20px;
+  .header-links-text {
+    font-size: 15px;
   }
 
   .header-ul > li > i {
@@ -311,34 +334,34 @@ ul {
     color: #264653;
   }
 
-  /* Start on clinic map section */
-
-  .map-title {
-    text-align: center;
-    color: #264653;
-    margin: 10px auto;
-  }
-
-  .map-frame {
-    width: 90%;
-    height: 300px;
-    margin: 10px auto;
-  }
-
   /* Start on clinic details section */
 
   .clinic-details {
+    display: flex;
+    flex-direction: column;
     height: 400px;
+    width: 75%;
+    margin: 40px auto;
+    padding-top: 20px;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.5);
+    justify-content: space-between;
+    align-items: center;
   }
 
   .details-card {
-    height: 30px;
-    background-color: #f3b5a6;
-    border: 1px solid #264653;
+    width: 70%;
+    height: 50px;
+    border: 1px solid #444;
     border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
+    margin: 5px auto;
     text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+
+  strong {
+    color: #4b97d6;
   }
 
   .appointment-btn {
@@ -348,11 +371,33 @@ ul {
     font-weight: bold;
     transition-timing-function: ease-in-out;
     transition-duration: 0.75s;
+    transform: translateX(20px);
   }
 
   .appointment-btn:hover {
-    padding: 10px;
     transform: translateY(10px);
+  }
+
+  /* Start on clinic map section */
+
+  .clinic-map {
+    margin: 20px auto;
+  }
+
+  .map-title {
+    text-align: center;
+    color: #e76f51;
+    margin: 20px auto;
+  }
+
+  .fa-map-marked-alt {
+    color: #e76f51;
+  }
+
+  .map-frame {
+    width: 90%;
+    height: 300px;
+    margin: 10px auto;
   }
 
   /* Footer section */
@@ -375,12 +420,13 @@ ul {
   .footer-main-links {
     border-top: 1px solid white;
     border-bottom: 1px solid white;
-    margin: 20px 5px;
+    margin: 30px 5px;
     padding: 20px 5px;
   }
 
   .ul-first-footer {
-    justify-content: center;
+    width: 50%;
+    justify-content: space-around;
   }
 
   .ul-first-footer > li {
@@ -426,10 +472,12 @@ ul {
 
   .footer-main-info-input {
     outline: none;
-    border: none;
-    width: 80%;
+    width: 60%;
     height: 30px;
     padding: 5px;
+    background-color: black;
+    border: 1px solid #444;
+    border-right: none;
   }
 
   .footer-main-info-title {
@@ -440,18 +488,18 @@ ul {
   }
 
   .footer-main-info-button {
-    width: 50%;
-    height: 40px;
-    background-color: #e9c46a;
+    width: 30%;
+    height: 30px;
+    background-color: #444;
     outline: none;
     border: none;
     margin-top: 5px;
-    padding: 10px;
+    color: white;
   }
 
   .footer-main-info-text {
     margin: 5px auto;
-    color: gray;
+    color: rgba(255, 255, 255, 0.705);
     font-size: 16px;
   }
 
@@ -484,10 +532,9 @@ ul {
 
 @media screen and (min-width: 1025px) {
   /* Header */
-
   header {
     background-color: #e76f51;
-    height: 110px;
+    height: 70px;
   }
 
   /* Nav section */
@@ -511,8 +558,8 @@ ul {
   }
 
   .header-logo-img {
-    width: 100px;
-    height: 100px;
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
     transition-duration: 2s;
     transition-timing-function: ease-in-out;
@@ -523,7 +570,7 @@ ul {
   }
 
   .header-links {
-    width: 60%;
+    width: 50%;
   }
 
   .header-links strong {
@@ -534,9 +581,8 @@ ul {
     justify-content: space-around;
   }
 
-  .header-ul > li > i,
-  a {
-    font-size: 20px;
+  .header-links-text {
+    font-size: 15px;
   }
 
   .header-ul > li > i {
@@ -550,52 +596,71 @@ ul {
     color: #264653;
   }
 
+  /* Start on clinic details section */
+
+  .clinic-details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 75%;
+    margin: 40px auto;
+    padding-top: 20px;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.5);
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .details-card {
+    width: 49%;
+    height: 60px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    margin: 5px auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 0;
+  }
+
+  strong {
+    color: #4b97d6;
+  }
+
+  .appointment-btn {
+    padding: 15px;
+    outline: none;
+    color: #264653;
+    font-weight: bold;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.75s;
+    transform: translateX(20px);
+  }
+
+  .appointment-btn:hover {
+    transform: translateY(10px);
+  }
+
   /* Start on clinic map section */
+
+  .clinic-map {
+    margin: 20px auto;
+  }
 
   .map-title {
     text-align: center;
-    color: #264653;
-    margin: 10px auto;
+    color: #e76f51;
+    margin: 20px auto;
+  }
+
+  .fa-map-marked-alt {
+    color: #e76f51;
   }
 
   .map-frame {
     width: 90%;
     height: 300px;
     margin: 10px auto;
-  }
-
-  /* Start on clinic details section */
-
-  .clinic-details {
-    height: 400px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .details-card {
-    width: 40%;
-    height: 30px;
-    background-color: #f3b5a6;
-    border: 1px solid #264653;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px auto;
-    text-align: center;
-  }
-
-  .appointment-btn {
-    padding: 10px;
-    outline: none;
-    color: #264653;
-    font-weight: bold;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.75s;
-  }
-
-  .appointment-btn:hover {
-    padding: 10px;
-    transform: translateY(10px);
   }
 
   /* Footer section */
@@ -623,12 +688,13 @@ ul {
   }
 
   .ul-first-footer {
-    justify-content: center;
+    width: 50%;
+    justify-content: space-around;
   }
 
   .ul-first-footer > li {
     margin: 5px;
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .footer-location-icon {
@@ -669,10 +735,12 @@ ul {
 
   .footer-main-info-input {
     outline: none;
-    border: none;
-    width: 80%;
-    height: 30px;
+    border: 1px solid #444;
+    border-right: none;
+    width: 60%;
+    height: 40px;
     padding: 5px;
+    background-color: black;
   }
 
   .footer-main-info-title {
@@ -683,18 +751,18 @@ ul {
   }
 
   .footer-main-info-button {
-    width: 50%;
+    width: 30%;
     height: 40px;
-    background-color: #e9c46a;
+    background-color: #444;
     outline: none;
     border: none;
     margin-top: 5px;
-    padding: 10px;
+    color: white;
   }
 
   .footer-main-info-text {
     margin: 5px auto;
-    color: gray;
+    color: rgba(255, 255, 255, 0.705);
     font-size: 16px;
   }
 

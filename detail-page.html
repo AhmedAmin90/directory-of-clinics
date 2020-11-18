@@ -8,7 +8,6 @@
   </head>
   <body>
     <!-- Start on Header part -->
-
     <header>
       <nav class="flex-col nav-large-screen">
         <div class="header-logo flex-row">
@@ -16,6 +15,7 @@
             class="header-logo-img"
             src="./images/clinic-logo.jpg"
             alt="clinic-logo"
+            onclick="location.href='index.html';"
           />
         </div>
         <div class="header-links">
@@ -25,19 +25,25 @@
                 onclick="location.href='search.html';"
                 class="fas fa-search-location"
               ></i>
-              <strong> <a href="search.html">Clinics</a> </strong>
+              <strong>
+                <a class="header-links-text" href="search.html">Clinics</a>
+              </strong>
             </li>
             <li>
               <i onclick="location.href='#about-us';" class="far fa-user"></i>
-              <strong> <a href="#about-us">About</a> </strong>
+              <strong>
+                <a class="header-links-text" href="#about-us">About</a>
+              </strong>
             </li>
             <li>
               <i class="fas fa-rss"></i>
-              <strong> <a href="#">Blog</a> </strong>
+              <strong> <a class="header-links-text" href="#">Blog</a> </strong>
             </li>
             <li>
               <i onclick="location.href='index.html';" class="fas fa-bars"></i>
-              <strong> <a href="index.html">Home</a> </strong>
+              <strong>
+                <a class="header-links-text" href="index.html">Home</a>
+              </strong>
             </li>
           </ul>
         </div>
@@ -45,22 +51,18 @@
     </header>
 
     <main>
-      <section class="clinic-map">
-        <h1 class="map-title">Clinic Location</h1>
-        <div class="map flex-row">
-          <iframe
-            class="map-frame"
-            src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(clinic%20address)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-          ></iframe>
-        </div>
-      </section>
-
       <section class="clinic-details flex-col">
         <div class="details-card">
           <p>Telephone Number: <strong>0912345678</strong></p>
         </div>
         <div class="details-card">
           <p>Email: <strong>info@clinic.com</strong></p>
+        </div>
+        <div class="details-card">
+          <p>Adess: <strong>Street - city </strong></p>
+        </div>
+        <div class="details-card">
+          <p>Fax: <strong>09123456789</strong></p>
         </div>
         <div class="details-card">
           <p>Working Hours: <strong>From 8 am to 6 pm</strong></p>
@@ -73,6 +75,18 @@
           <button class="appointment-btn" type="button">
             Choose appointment
           </button>
+        </div>
+      </section>
+
+      <section class="clinic-map">
+        <h1 class="map-title">
+          <i class="fas fa-map-marked-alt"></i> Clinic Location
+        </h1>
+        <div class="map flex-row">
+          <iframe
+            class="map-frame"
+            src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(clinic%20address)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ></iframe>
         </div>
       </section>
     </main>
@@ -109,8 +123,7 @@
                 class="footer-main-info-input"
                 type="email"
                 placeholder="you@example.com"
-              />
-              <button class="footer-main-info-button" type="submit">
+              /><button class="footer-main-info-button" type="submit">
                 Send
               </button>
             </form>

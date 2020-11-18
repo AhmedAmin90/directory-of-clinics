@@ -461,11 +461,7 @@ ul {
   /* result cards */
 
   .search-results {
-    height: 1200px;
-  }
-
-  .search-results {
-    height: 970px;
+    height: 1000px;
   }
 
   .result-card {
